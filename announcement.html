@@ -19,14 +19,15 @@
   <!-- Custom styles for this template -->
   <link href="../assets/template/css/parent-portal.css" rel="stylesheet">
   <link href="../assets/template/css/style.css" rel="stylesheet">
-  <link href="../assets/global/css/login.css" rel="stylesheet">
+  <link href="../assets/global/css/announcement-carousel.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 
 <body class="d-flex h-100 text-center text-bg-dark bg-image">
 
 
   <div class="cover-container d-flex w-100 h-100- p-3 mx-auto flex-column">
-<!-- Desktop display -->
+    <!-- Desktop display -->
     <header
       class="d-flex flex-wrap align-items-center justify-content-between justify-content-center justify-content-md-between justify-content-sm-between rounded p-2 mb-4 bg-white d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
       <div class="col-md-3 mb-2 mb-md-0 d-flex justify-content-center align-items-center">
@@ -37,7 +38,8 @@
       </div>
 
       <nav class="nav nav-masthead justify-content-center float-md-center ">
-        <a class="nav-link fw-medium py-1 px-0 text-custom-color active" aria-current="page" href="/parent-portal.html">Home</a>
+        <a class="nav-link fw-medium py-1 px-0 text-custom-color active" aria-current="page"
+          href="/parent-portal.html">Home</a>
         <a class="nav-link fw-medium py-1 px-0 text-custom-color" href="#">Announcement</a>
       </nav>
 
@@ -48,7 +50,7 @@
       </div>
     </header>
 
-<!-- mobile display -->
+    <!-- mobile display -->
     <header class="w-100 d-block d-sm-block d-md-none d-lg-none d-xl-none p-2 " data-bs-theme="light">
       <div class="navbar navbar-dark bg-light shadow-sm rounded">
         <div class="container">
@@ -85,66 +87,62 @@
     </header>
 
     <main class="px-lg-5  d-lg-flex align-items-center gap-2 mt-4 mb-4" style="height: 100dvh;">
-      <div
-        class="container col-12 col-sm-12 col-lg-6  d-flex flex-column  justify-content-center align-items-sm-center align-items-lg-start text-lg-start text-sm-center mt-sm-4 mt-lg-4">
+      <!-- <section
+        class="container col-12 col-sm-12 col-lg-6  d-flex flex-column  justify-content-center align-items-sm-center align-items-lg-start text-lg-start text-sm-center mt-sm-4 mt-lg-4"> -->
         <!-- <img class="School-logo"  src="../assets/img/DEMO-logo.png" alt="School-logo" srcset="../assets/img/DEMO-logo.png" role="img"> -->
-        <h1>Announcement</h1>
+        <!-- <h1>Announcement</h1>
         <p class="lead text-lg-start text-sm-center">Stay Up-to-Date with the Latest School News</p>
-      </div>
+      </section> -->
 
-      <div class="container col-12 col-sm-12 col-lg-6 d-flex justify-content-center align-items-center pt-5 pb-5">
-        
-  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-    <div class="carousel-indicators w-100">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+      <section id="section-1">
+        <!-- <div class="container-fluid h-55 w-100">
+          <img class="announcement-banner"  src="../assets/img/announcement/announcement.jpg" alt="announcement image" srcset="../assets/img/announcement/announcement.jpg" role="img">
+       </div> -->
+        <div class="content-slider">
+          <input style="visibility: hidden;" type="radio" id="banner1" class="sec-1-input" name="banner" checked>
+          <input style="visibility: hidden;" type="radio" id="banner2" class="sec-1-input" name="banner">
+          <input style="visibility: hidden;" type="radio" id="banner3" class="sec-1-input" name="banner">
+          <input style="visibility: hidden;" type="radio" id="banner4" class="sec-1-input" name="banner">
+          <div class="slider">
+            <div id="top-banner-1" class="banner">
+              <div class="banner-inner-wrapper">
+                <h1 class="banner-heading">School<br>Announcement and News</h1>
+                <br>
+                <h2>Stay Up-to-Date with the Latest School News</h2>
+              </div>
+            </div>
+            <div id="top-banner-2" class="banner">
+              <div class="banner-inner-wrapper">
+                <h1 class="banner-heading">Start<br>Enrollment</h1>
+                <br>
+                <h2>July 01, 2024, Enroll Now.</h2>
+              </div>
+            </div>
+            <div id="top-banner-3" class="banner">
+              <div class="banner-inner-wrapper">
+                <h1 class="banner-heading">We Are<br>IQon</h1>
+                <br>
+                <h2>Here We Are</h2>
+              </div>
+            </div>
+            <div id="top-banner-4" class="banner">
+              <div class="banner-inner-wrapper">
+                <h1 class="banner-heading">Welcome<br>to IQon</h1>
+                <br>
+                <h2>Our Contacts</h2>
+              </div>
+            </div>
           </div>
+          <nav>
+            <div class="controls">
+              <label for="banner1"><span class="progressbar"><span class="progressbar-fill"></span></span><span>01</span> Title</label>
+              <label for="banner2"><span class="progressbar"><span class="progressbar-fill"></span></span><span>02</span> Title</label>
+              <label for="banner3"><span class="progressbar"><span class="progressbar-fill"></span></span><span>03</span> Title</label>
+              <label for="banner4"><span class="progressbar"><span class="progressbar-fill"></span></span><span>04</span> Title</label>
+            </div>
+          </nav>
         </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-      </div>
-
-     
+      </section>
 
     </main>
 
@@ -155,6 +153,7 @@
   </div>
 
   <script src="../assets/template/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/global/js/announcement-carousel.js"></script>
 </body>
 
 </html>
