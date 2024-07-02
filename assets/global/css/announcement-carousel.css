@@ -210,27 +210,17 @@
   body {
     font-size: 22px;
   }
- 
-  #section-1 .content-slider .slider .banner .banner-inner-wrapper {
-    /* padding-top: 12em; */
-  }
 }
 
 @media only screen and (max-width: 1919px) {
   body {
     font-size: 20px;
   }
-  #section-1 .content-slider .slider .banner .banner-inner-wrapper {
-    /* padding-top: 30px; */
-  }
 }
 
 @media only screen and (max-width: 1680px) {
   body {
     font-size: 18px;
-  }
-  #section-1 .content-slider .slider .banner .banner-inner-wrapper {
-    /* padding-top: 9em; */
   }
 }
 
@@ -279,9 +269,6 @@
   }
   #section-1 .content-slider .slider .banner .banner-inner-wrapper h1 {
     font-size: 30px;
-  }
-  #section-1 .content-slider .slider .banner .banner-inner-wrapper {
-    /* padding-top: 5em; */
   }
 }
 
