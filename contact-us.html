@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+
+<head>
+  <script src="../assets/global/js/color-modes.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="School Portal for Students Parent">
+  <meta name="author" content="Interaq - Rowell">
+  <meta name="version" content="interaq-v0.1">
+  <title>Parent Portal - School Name</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <link href="../assets/template/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="../assets/template/css/bootstrap.rtl.min.css" rel="stylesheet"> -->
+
+
+  <!-- Custom styles for this template -->
+  <link href="../assets/template/css/parent-portal.css" rel="stylesheet">
+  <link href="../assets/template/css/style.css" rel="stylesheet">
+  <link href="../assets/global/css/login.css" rel="stylesheet">
+</head>
+
+<body class="d-flex h-100 text-center text-bg-dark bg-image">
+
+
+  <div class="cover-container d-flex w-100 h-100- p-3 mx-auto flex-column">
+<!-- Desktop display -->
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-between justify-content-center justify-content-md-between justify-content-sm-between rounded p-2 mb-4 bg-white d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
+      <div class="col-md-3 mb-2 mb-md-0 d-flex justify-content-center align-items-center">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img class="school-logo-header" src="../assets/img/DEMO-logo.png" alt="School-logo"
+            srcset="../assets/img/DEMO-logo.png" role="img">
+        </a>
+      </div>
+
+      <nav class="nav nav-masthead justify-content-center float-md-center ">
+        <a class="nav-link fw-medium py-1 px-0 text-custom-color active" aria-current="page" href="#">Home</a>
+        <a class="nav-link fw-medium py-1 px-0 text-custom-color" href="/announcement.html">Announcement</a>
+      </nav>
+
+      <div class="col-md-3 d-flex justify-content-center ">
+        <a href="#" class="btn btn-bd-primary text-white me-3 text-custom-color- ">
+          Contact Us
+        </a>
+      </div>
+    </header>
+
+<!-- mobile display -->
+    <header class="w-100 d-block d-sm-block d-md-none d-lg-none d-xl-none p-2 " data-bs-theme="light">
+      <div class="navbar navbar-dark bg-light shadow-sm rounded">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <img class="school-logo-header" src="../assets/img/DEMO-logo.png" alt="School-logo"
+              srcset="../assets/img/DEMO-logo.png" role="img">
+          </a>
+          <button class="navbar-toggler text-dark" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-menu">
+              <line x1="4" x2="20" y1="12" y2="12" />
+              <line x1="4" x2="20" y1="6" y2="6" />
+              <line x1="4" x2="20" y1="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="collapse text-bg-light " id="navbarHeader" style="margin-top: -5px; ">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-4 offset-md-1 py-4">
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-dark">Home</a></li>
+                <li><a href="/announcement.html" class="text-dark">Announcement</a></li>
+                <li><a href="#" class="text-dark">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="px-lg-5  d-lg-flex align-items-center gap-2 mt-4 mb-4" style="height: 100dvh;">
+      <div
+        class="container col-12 col-sm-12 col-lg-6  d-flex flex-column  justify-content-center align-items-sm-center align-items-lg-start text-lg-start text-sm-center mt-sm-4 mt-lg-4">
+        <!-- <img class="School-logo"  src="../assets/img/DEMO-logo.png" alt="School-logo" srcset="../assets/img/DEMO-logo.png" role="img"> -->
+        <h1>School Institution Name Here</h1>
+        <p class="lead text-lg-start text-sm-center">Empowering Student Success. Together, Stay Informed</p>
+      </div>
+
+      <div id="login"
+        class="container col-12 col-sm-12 col-lg-6 d-flex justify-content-center align-items-center pt-5 pb-5">
+        <div class="form-container w-auto">
+          <img class="School-logo mb-2" src="../assets/img/DEMO-logo.png" alt="Log image"
+            srcset="../assets/img/DEMO-logo.png" role="img">
+          <h6>Parent Portal</h6>
+          <p class="title">Welcome Back</p>
+          <hr>
+          <!-- <p class="title">Login</p> -->
+          <form class="form mb-2">
+            <div class="input-group">
+              <label for="username">Username</label>
+              <input type="text" name="username" id="username" placeholder="">
+            </div>
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" placeholder="">
+              <div class="forgot">
+                <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
+              </div>
+            </div>
+            <button class="send-msg-btn">Send</button>
+          </form>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="mt-auto pt-4 text-white-50">
+      <p>Copyright © 2024 <a href="#" class="text-white">School Name </a>. All rights reserved | Website Design by <a
+          href="interaq.net" class="text-white">Interaq</a>.</p>
+    </footer>
+  </div>
+
+  <script src="../assets/template/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
