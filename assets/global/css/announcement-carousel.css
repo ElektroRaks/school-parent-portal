@@ -31,7 +31,7 @@
   /* height: 80dvh; */
   color: var(--main-color);
   /* background-color: #222; */
-  background-image: linear-gradient(to left top, #b709ef, #ffffff00), url("/assets/img/announcement/announcement.jpg");
+  background-image: linear-gradient(to left top, #b709ef, #ffffff00), url("/assets/img/announcement/announcement.jpg"), url("announcement.jpg");
   background-size: cover;
   border-radius: 10px;
   .content-slider {
