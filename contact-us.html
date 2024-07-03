@@ -19,7 +19,7 @@
   <!-- Custom styles for this template -->
   <link href="../assets/template/css/parent-portal.css" rel="stylesheet">
   <link href="../assets/template/css/style.css" rel="stylesheet">
-  <link href="../assets/global/css/login.css" rel="stylesheet">
+  <link href="../assets/global/css/forms.css" rel="stylesheet">
 </head>
 
 <body class="d-flex h-100 text-center text-bg-dark bg-image">
@@ -97,22 +97,25 @@
         <div class="form-container w-auto">
           <img class="School-logo mb-2" src="../assets/img/DEMO-logo.png" alt="Log image"
             srcset="../assets/img/DEMO-logo.png" role="img">
-          <h6>Parent Portal</h6>
-          <p class="title">Welcome Back</p>
+          <h6></h6>
+          <p class="title">Contact Us</p>
           <hr>
           <!-- <p class="title">Login</p> -->
           <form class="form mb-2">
+            <input type="hidden" name="honeypot" id="honeypot" placeholder=""> <!--honeypot hidden input mao ning sagara gamiton para ma avoid ang spam email, pag-nay value nia e-reject di mo send add lang condition-->
             <div class="input-group">
               <label for="username">Username</label>
-              <input type="text" name="username" id="username" placeholder="">
+              <input type="text" name="username" id="username" placeholder="" required>
             </div>
             <div class="input-group">
-              <label for="password">Password</label>
-              <input type="password" name="password" id="password" placeholder="">
-              <div class="forgot">
-                <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
-              </div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="" required>
             </div>
+            <div class="input-group">
+              <label for="textarea">Message / Concerns</label>
+              <textarea maxlength="50" type="textarea" name="textarea" id="textarea" placeholder="" required></textarea>
+            </div>
+            <br>
             <button class="send-msg-btn">Send</button>
           </form>
         </div>
