@@ -26,7 +26,7 @@
 
 
   <div class="cover-container d-flex w-100 h-100- p-3 mx-auto flex-column">
-<!-- Desktop display -->
+    <!-- Desktop display -->
     <header
       class="d-flex flex-wrap align-items-center justify-content-between justify-content-center justify-content-md-between justify-content-sm-between rounded p-2 mb-4 bg-white d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
       <div class="col-md-3 mb-2 mb-md-0 d-flex justify-content-center align-items-center">
@@ -48,7 +48,7 @@
       </div>
     </header>
 
-<!-- mobile display -->
+    <!-- mobile display -->
     <header class="w-100 d-block d-sm-block d-md-none d-lg-none d-xl-none p-2 " data-bs-theme="light">
       <div class="navbar navbar-dark bg-light shadow-sm rounded">
         <div class="container">
@@ -74,7 +74,7 @@
           <div class="row justify-content-center">
             <div class="col-sm-4 offset-md-1 py-4">
               <ul class="list-unstyled">
-                <li><a href="#" class="text-dark">Home</a></li>
+                <li><a href="/parent-portal.html" class="text-dark">Home</a></li>
                 <li><a href="/announcement.html" class="text-dark">Announcement</a></li>
                 <li><a href="#" class="text-dark">Contact Us</a></li>
               </ul>
@@ -102,7 +102,8 @@
           <hr>
           <!-- <p class="title">Login</p> -->
           <form class="form mb-2">
-            <input type="hidden" name="honeypot" id="honeypot" placeholder=""> <!--honeypot hidden input mao ning sagara gamiton para ma avoid ang spam email, pag-nay value nia e-reject di mo send add lang condition-->
+            <input type="hidden" name="honeypot" id="honeypot" placeholder="">
+            <!--honeypot hidden input mao ning sagara gamiton para ma avoid ang spam email, pag-nay value nia e-reject di mo send add lang condition-->
             <div class="input-group">
               <label for="username">Username</label>
               <input type="text" name="username" id="username" placeholder="" required>
@@ -113,22 +114,20 @@
             </div>
             <div class="input-group">
               <label for="textarea">Message / Concerns</label>
-              <textarea maxlength="150" type="textarea" name="textarea" id="textarea" placeholder="" required></textarea>
-              <div class="counter-container"> 
-                <p>Total characters: 
-                    <span class="total-container" 
-                          id="total-container"> 
-                        0 
-                    </span> 
-                </p> 
-                <p> 
-                    Remaining characters: 
-                    <span class="remaining-container" 
-                          id="remaining-container"> 
-                        50 
-                    </span> 
-                </p> 
-            </div> 
+              <textarea maxlength="150" type="textarea" name="textarea" id="textarea" placeholder=""
+                required></textarea>
+              <div class="counter-container">
+                <p>Total characters:
+                  <span class="total-container" id="total-container"></span>
+                </p>
+                <p>
+                  Remaining characters:
+                  <span class="remaining-container" id="remaining-container"></span>
+                </p>
+                <p style="color:darksalmon">
+                  <span class="msg-limitExceeded" id="msg-limitExceeded"></span>
+                </p>
+              </div>
             </div>
             <br>
             <button class="send-msg-btn">Send</button>

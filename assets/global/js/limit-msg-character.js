@@ -7,6 +7,9 @@ let totalChar = document.getElementById(
 let remChar = document.getElementById( 
     "remaining-container"
 ); 
+let msgResponse = document.getElementById( 
+    "msg-limitExceeded"
+); 
 let maxLength = 150; 
 updateCount(); 
 area.addEventListener("input", () => { 
@@ -25,13 +28,12 @@ area.addEventListener(
             remChar.classList.add( 
                 "limit-exceeded"
             ); 
-            alert( 
-                "Character Limit Exceeded"
-            ); 
+            msgResponse.textContent = "Character Limit Exceeded";
         } else { 
             remChar.classList.remove( 
                 "limit-exceeded"
             ); 
+            msgResponse.textContent = " ";
         } 
     } 
 ); 
