@@ -113,7 +113,22 @@
             </div>
             <div class="input-group">
               <label for="textarea">Message / Concerns</label>
-              <textarea maxlength="50" type="textarea" name="textarea" id="textarea" placeholder="" required></textarea>
+              <textarea maxlength="150" type="textarea" name="textarea" id="textarea" placeholder="" required></textarea>
+              <div class="counter-container"> 
+                <p>Total characters: 
+                    <span class="total-container" 
+                          id="total-container"> 
+                        0 
+                    </span> 
+                </p> 
+                <p> 
+                    Remaining characters: 
+                    <span class="remaining-container" 
+                          id="remaining-container"> 
+                        50 
+                    </span> 
+                </p> 
+            </div> 
             </div>
             <br>
             <button class="send-msg-btn">Send</button>
@@ -130,6 +145,7 @@
   </div>
 
   <script src="../assets/template/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/global/js/limit-msg-character.js"></script>
 </body>
 
 </html>
