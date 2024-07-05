@@ -28,6 +28,9 @@
 ul.list-unstyled li {
   padding: 14px 0;
 }
+ul.list-unstyled li:hover{
+   background-color: #e7e7e7;
+}
 
 .bg-image{
   background-image: linear-gradient(180deg, rgba(3,5,34,0.3226540616246498) 0%, rgba(10,16,105,1) 91%), url("/assets/img/DEMO-bg.jpg");
