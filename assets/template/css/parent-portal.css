@@ -25,6 +25,10 @@
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 } */
 
+ul.list-unstyled li {
+  padding: 14px 0;
+}
+
 .bg-image{
   background-image: linear-gradient(180deg, rgba(3,5,34,0.3226540616246498) 0%, rgba(10,16,105,1) 91%), url("/assets/img/DEMO-bg.jpg");
   /* background-image: linear-gradient(to left top, #002e45a8, #1a2f57c9, #422a5dc2, #671b54d6, #83003ba8, #950d30a1, #a22321cf, #aa3a099e, #be57158f, #d1742380, #e390338f, #f4ac45e0), url("/assets/img/DEMO-bg.jpg"), url('DEMO-bg.jpg'); */
