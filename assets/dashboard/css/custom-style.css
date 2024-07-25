@@ -52,3 +52,10 @@
       display: none !important;
     }
   }
+
+.custom-btn-action
+{
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 3px;
+}

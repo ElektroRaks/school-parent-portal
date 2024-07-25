@@ -1,0 +1,493 @@
+<!-- Template by Rowell - 2024 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dashboard - Parent Portal</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/DEMO-logo.png">
+    
+    <!-- Chartist -->
+    <link rel="stylesheet" href="assets/dashboard/plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="assets/dashboard/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <!-- Custom Stylesheet -->
+    <link href="assets/dashboard/css/style.css" rel="stylesheet">
+    <link href="assets/dashboard/css/custom-style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!--******************* Preloader start  ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************  Preloader end ********************-->
+    <!--** main-wrapper start  **-->
+    <div id="main-wrapper"> 
+
+    <header>
+        <!--** Nav header start **-->
+        <div class="nav-header gradient-custom"> 
+            <div class="brand-logo p-2">
+                <div class="d-flex row flex-nowrap justify-content-center align-items-center">
+                    <div class="">
+                        <b class="logo-abbr pl-2"><img src="assets/img/DEMO-logo.png" height="50px" alt=""> </b>
+                        <span class="logo-compact"><img src="assets/img/DEMO-logo.png" height="50px" alt=""></span>
+                        <span class="brand-title ">
+                            <img src="assets/img/DEMO-logo.png" alt="" height="60px">
+                        </span>
+                    </div>
+                    <div class="p-1 m-hide "  style="color:#fff;">
+                        <span style="font-size:12px;">School Name</span><br>
+                        <span style="font-size:10px;">HR Management System</span>
+                    </div>
+
+                </div>
+                    
+                    
+            </div>
+        </div> 
+        <!--*** Nav header end ***-->
+
+
+        <!--** Header start ***-->
+        <div class="header">    
+            <div class="header-content clearfix">
+                
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-left">
+                    <div class="input-group icons">
+                        <!-- <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent border-0 pr-2 pr-sm-3" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
+                        </div> -->
+                        <!-- <input type="search" class="form-control" placeholder="Search Dashboard" aria-label="Search Dashboard">
+                        <div class="drop-down   d-md-none">
+							<form action="#">
+								<input type="text" class="form-control" placeholder="Search">
+							</form>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="header-right">
+                    <ul class="clearfix">
+                        <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
+                                <i class="mdi mdi-note-outline"></i>
+                                <span class="badge gradient-1 badge-pill badge-primary">3</span>
+                            </a>
+                            <div class="drop-down animated fadeIn dropdown-menu">
+                                <div class="dropdown-content-heading d-flex justify-content-between">
+                                    <span class="">3 New Notes</span>  
+                                    
+                                </div>
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <!--** Loop **-->
+                                        <li class="notification-unread">
+                                            <a href="javascript:void()">
+                                                <img class="float-left mr-3 avatar-img" src="./assets/dashboard/images/avatar/1.jpg" alt="">
+                                                <div class="notification-content">
+                                                    <div class="notification-heading">Teacher Perz</div>
+                                                    <div class="notification-timestamp">08 Hours ago</div>
+                                                    <div class="notification-text">Hi Ma'am, Just wanted to let you ...</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!--** Loop **-->
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
+                                <i class="mdi mdi-bell-outline"></i>
+                                
+                                <span class="badge badge-pill gradient-2 badge-primary">3</span>
+                            </a>
+                            <div class="drop-down animated fadeIn dropdown-menu dropdown-notfication">
+                                <div class="dropdown-content-heading d-flex justify-content-between">
+                                    <span class="">2 New Notifications</span>  
+                                    
+                                </div>
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <!--** Loop **-->
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <span class="mr-3 avatar-icon bg-success-lighten-2"><i class="icon-present"></i></span>
+                                                <div class="notification-content">
+                                                    <h6 class="notification-heading">Events near you</h6>
+                                                    <span class="notification-text">Within next 5 days</span> 
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!--** Loop **-->
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="icons dropdown d-none d-md-flex">
+                            <a href="javascript:void(0)" class="log-user"  data-toggle="dropdown">
+                                <span>Access Mode</span>  <i class="fa fa-angle-down f-s-14" aria-hidden="true"></i>
+                            </a>
+                            <div class="drop-down dropdown-language animated fadeIn  dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                         <!-- <li><a href="javascript:void()">Super Admin</a></li> -->
+                                         <li><a href="dashboard.html">Admin</a></li>
+                                         <li><a href="teacher-dash.html">Teacher</a></li>
+                                         <li><a href="parent-dash.html">Parent</a></li>
+                                         <!-- github link -->
+                                         <!-- <li><a href="/school-parent-portal/admin-dash">dashboard.html</a></li>
+                                         <li><a href="school-parent-portal/teacher-dash.html">Teacher</a></li> -->
+                                         <!-- <li><a href="school-parent-portal/parent-dash.html">Teacher</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
+                                <span class="activity active"></span>
+                                <div id="profileImage"></div>
+                                <span id="profileImageUserName" data-name="Rowell Aguiton"></span>
+                                <!-- display user image using condition -->
+                                <!-- <img src="./assets/college_assets/images/user/1.png" height="40" width="40" alt=""> -->
+                            </div>
+                            <div class="drop-down dropdown-profile   dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="app-profile.html"><i class="icon-user"></i> <span>Profile</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="email-inbox.html"><i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill badge-primary">3</div></a>
+                                        </li>
+                                        
+                                        <hr class="my-2">
+                                        <li>
+                                            <a href="page-lock.html"><i class="icon-lock"></i> <span>Lock Screen</span></a>
+                                        </li>
+                                        <li><a href="page-login.html"><i class="icon-key"></i> <span>Logout</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--** Header end ti-comment-alt **-->
+    </header>
+
+
+    <!--** Sidebar start **-->
+    <sidebar class="nk-sidebar">           
+        <div class="nk-nav-scroll">
+            <ul class="metismenu" id="menu">
+                <li class="nav-label">Teacher Portal</li>
+                <li>
+                    <a href="#" aria-expanded="false">
+                        <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> 
+                        <span class="nav-text">Parent</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="#">Parent List</a></li>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Lorem</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <i class="icon-graduation menu-icon"></i> <span class="nav-text">Manage Student</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="#">Grades</a></li>
+                        <li><a href="#">Attendance</a></li>
+                        <li><a href="#">Behavior</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-messages-square"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg>
+                        <span class="nav-text">Communication</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="#">Message</a></li>
+                        <li><a href="#">Announcement</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-pie-chart"><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M16 22h2a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3.5"/><path d="M4.017 11.512a6 6 0 1 0 8.466 8.475"/><path d="M8 16v-6a6 6 0 0 1 6 6z"/></svg>
+                        <span class="nav-text">Reports</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="#">Student Performance</a></li>
+                        <li><a href="#">Attendance</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="nav-label">Administration</li> -->
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <i class="icon-settings menu-icon"></i> <span class="nav-text">Account</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="#">Edit Account</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+    </sidebar>
+    <!--** Sidebar end **-->
+
+
+   <!--** Content body start **-->
+   <main class="content-body">
+
+    <!-- Main content, all include nga view layout kada page dani e display -->
+    <div class="row page-titles mx-0">
+        <div class="col p-md-0">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                <!-- <li class="breadcrumb-item active"><a href="javascript:void(0)">Home</a></li> -->
+            </ol>
+        </div>
+    </div>
+    <!-- row -->
+
+    <div class="container-fluid">
+
+        <div class="row mt-1">
+                <!-- Start Left Column -->
+                <div class="col-lg-8 col-md-12">
+
+                    <div class="row ">
+                        <div class="col-lg-3 col-sm-6 gap-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark text-center">Active Parent</h3>
+                                    <div class="d-inline-block d-flex flex-column justify-content-center align-items-center">
+                                        <h2 class="text-dark  text-center">20%</h2>
+                                        <!-- <p class="text-white mb-0">Jan - March 2019</p> -->
+                                        <a href="#" class="btn mb-1 btn-rounded btn-outline-dark btn-xs mt-1"> View </a>
+                                    </div>
+                                    <!-- <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark text-center">Active Teacher</h3>
+                                    <div class="d-inline-block d-flex flex-column justify-content-center align-items-center">
+                                        <h2 class="text-dark  text-center">30%</h2>
+                                        <!-- <p class="text-white mb-0">Jan - March 2019</p> -->
+                                        <a href="#" class="btn mb-1 btn-rounded btn-outline-dark btn-xs mt-1"> View </a>
+                                    </div>
+                                    <!-- <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark text-center">Active Student</h3>
+                                    <div class="d-inline-block d-flex flex-column justify-content-center align-items-center">
+                                        <h2 class="text-dark  text-center">20%</h2>
+                                        <!-- <p class="text-white mb-0">Jan - March 2019</p> -->
+                                        <a href="#" class="btn mb-1 btn-rounded btn-outline-dark btn-xs mt-1"> View </a>
+                                    </div>
+                                    <!-- <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark text-center">First Quarter</h3>
+                                    <small>MISSING GRADE</small>
+                                    <div class="d-inline-block d-flex flex-column justify-content-center align-items-center">
+                                        <h2 class="text-dark  text-center">5</h2>
+                                        <!-- <p class="text-white mb-0">Jan - March 2019</p> -->
+                                        <a href="#" class="btn mb-1 btn-rounded btn-outline-dark btn-xs mt-1"> View Details</a>
+                                    </div>
+                                    <!-- <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark text-center">Heading</h3>
+                                    <div class="d-inline-block d-flex flex-column justify-content-center align-items-center">
+                                        <h2 class="text-dark  text-center">5</h2>
+                                        <!-- <p class="text-white mb-0">Jan - March 2019</p> -->
+                                        <a href="#" class="btn mb-1 btn-rounded btn-outline-dark btn-xs mt-1"> View </a>
+                                    </div>
+                                    <!-- <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark text-center">Heading</h3>
+                                    <div class="d-inline-block d-flex flex-column justify-content-center align-items-center">
+                                        <h2 class="text-dark  text-center">39</h2>
+                                        <!-- <p class="text-white mb-0">Jan - March 2019</p> -->
+                                        <a href="#" class="btn mb-1 btn-rounded btn-outline-dark btn-xs mt-1"> View </a>
+                                    </div>
+                                    <!-- <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark text-center">Heading</h3>
+                                    <div class="d-inline-block d-flex flex-column justify-content-center align-items-center">
+                                        <h2 class="text-dark  text-center">07</h2>
+                                        <!-- <p class="text-white mb-0">Jan - March 2019</p> -->
+                                        <a href="#" class="btn mb-1 btn-rounded btn-outline-dark btn-xs mt-1"> View </a>
+                                    </div>
+                                    <!-- <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark text-center">Heading</h3>
+                                    <div class="d-inline-block d-flex flex-column justify-content-center align-items-center">
+                                        <h2 class="text-dark  text-center">07</h2>
+                                        <!-- <p class="text-white mb-0">Jan - March 2019</p> -->
+                                        <a href="#" class="btn mb-1 btn-rounded btn-outline-dark btn-xs mt-1"> View </a>
+                                    </div>
+                                    <!-- <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container gap-1">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Heading</h4>
+                                            <canvas id="sales-chart" width="500" height="250"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Heading</h4>
+                                            <canvas id="sales-chart" width="500" height="250"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- End Left Column -->
+
+                <!-- Start Right Column -->
+                <div class="col-lg-4 col-md-12"> 
+
+                    <div class="card card-widget">
+                        <div class="card-body">
+                            <h5 class="card-title">Component</h5>
+                            <h2 class="mt-4">100% </h2>
+                            <span>Total</span>
+                            <div class="mt-4">
+                                <!-- <h4>30</h4> -->
+                                <h6>Written Works <span class="pull-right">30%</span></h6>
+                                <div class="progress mb-3" style="height: 7px">
+                                    <div class="progress-bar bg-primary" style="width: 11%;" role="progressbar"><span class="sr-only">11% Written</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <!-- <h4>50</h4> -->
+                                <h6 class="m-t-10 text-muted">Performance Task <span class="pull-right">40%</span></h6>
+                                <div class="progress mb-3" style="height: 7px">
+                                    <div class="progress-bar bg-success" style="width: 25%;" role="progressbar"><span class="sr-only">25% Performance</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <!-- <h4>20</h4> -->
+                                <h6 class="m-t-10 text-muted">Quarterly Examination<span class="pull-right">30%</span></h6>
+                                <div class="progress mb-3" style="height: 7px">
+                                    <div class="progress-bar bg-warning" style="width: 18%;" role="progressbar"><span class="sr-only">18% Leave</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-widget">
+                        <div class="card-body">
+                            <h5 class="card-title">Heading</h5>
+                            
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End Right Column -->
+
+        </div>
+
+    <!-- Main content, all include nga view layout kada page dani e display -->
+
+
+        <!-- Sa footer nani na belong nga layout -->
+    </div>
+    <!-- #/ container -->
+</main>
+<!--** Content body end **-->
+
+        <!--** Footer start ***-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; Designed & Developed by <a href="interaq.net">Interaq.net</a>  <span id="copyright"> </span></p>
+            </div>
+        </div>
+        <!--** Footer end  ***-->
+    </div> <!--** main-wrapper end  **-->
+    
+
+    <script src="assets/dashboard/plugins/common/common.min.js"></script>
+    <script src="assets/dashboard/js/custom.min.js"></script>
+    <script src="assets/dashboard/js/settings.js"></script>
+    <script src="assets/dashboard/js/gleek.js"></script>
+    <script src="assets/dashboard/js/styleSwitcher.js"></script>
+
+
+    
+    <script src="assets/dashboard/js/custom-js.js"></script>
+
+    
+</body>
+</html>

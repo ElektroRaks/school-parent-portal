@@ -13,7 +13,6 @@
     <!-- Chartist -->
     <link rel="stylesheet" href="assets/dashboard/plugins/chartist/css/chartist.min.css">
     <link rel="stylesheet" href="assets/dashboard/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
-    <link href="assets/dashboard/plugins/toastr/css/toastr.min.css" rel="stylesheet">
     <!-- Custom Stylesheet -->
     <link href="assets/dashboard/css/style.css" rel="stylesheet">
     <link href="assets/dashboard/css/custom-style.css" rel="stylesheet">
@@ -144,14 +143,14 @@
                             <div class="drop-down dropdown-language animated fadeIn  dropdown-menu">
                                 <div class="dropdown-content-body">
                                     <ul>
-                                        <!-- <li><a href="javascript:void()">Super Admin</a></li> -->
-                                        <li><a href="dashboard.html">Admin</a></li>
-                                        <li><a href="teacher-dash.html">Teacher</a></li>
-                                        <li><a href="parent-dash.html">Parent</a></li>
-                                        <!-- github link -->
-                                        <!-- <li><a href="/school-parent-portal/admin-dash">dashboard.html</a></li>
-                                        <li><a href="school-parent-portal/teacher-dash.html">Teacher</a></li> -->
-                                        <!-- <li><a href="school-parent-portal/parent-dash.html">Teacher</a></li> -->
+                                         <!-- <li><a href="javascript:void()">Super Admin</a></li> -->
+                                         <li><a href="dashboard.html">Admin</a></li>
+                                         <li><a href="teacher-dash.html">Teacher</a></li>
+                                         <li><a href="parent-dash.html">Parent</a></li>
+                                         <!-- github link -->
+                                         <!-- <li><a href="/school-parent-portal/admin-dash">dashboard.html</a></li>
+                                         <li><a href="school-parent-portal/teacher-dash.html">Teacher</a></li> -->
+                                         <!-- <li><a href="school-parent-portal/parent-dash.html">Teacher</a></li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -195,45 +194,27 @@
     <sidebar class="nk-sidebar">           
         <div class="nk-nav-scroll">
             <ul class="metismenu" id="menu">
-                <li class="nav-label">Admin Menu</li>
+                <li class="nav-label">Parent Portal</li>
                 <li>
-                    <a href="dashboard.html" aria-expanded="false">
+                    <a href="parent-dash.html" aria-expanded="false">
                         <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
                     </a>
                 </li>
                 <li>
                     <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                        <i class="icon-user menu-icon"></i> <span class="nav-text">Manage Users</span>
+                        <i class="icon-graduation menu-icon"></i> <span class="nav-text">My Student</span>
                     </a>
                     <ul aria-expanded="false">
-                        <li><a href="dashboard-account.html">Teacher</a></li>
-                        <li><a href="dashboard-account.html">Parent</a></li>
+                        <li><a href="parent-dash-grades.html">Grades</a></li>
+                        <li><a href="parent-dash-attendance.html">Attendance</a></li>
+                        <!-- <li><a href="parent-dash-Behavior.html">Behavior</a></li> -->
                     </ul>
                 </li>
                 <li>
-                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                        <i class="icon-graduation menu-icon"></i> <span class="nav-text">Manage Students</span>
+                    <a href="message.html" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-messages-square"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg>
+                        <span class="nav-text">Message</span>
                     </a>
-                    <ul aria-expanded="false">
-                        <li><a href="dashboard-student.html">Student List</a></li>
-                        <li><a href="dashboard-grade.html">Grades</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="dashboard-announcement.html" aria-expanded="false">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-megaphone"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
-                        <span class="nav-text">Announcement</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-pie-chart"><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M16 22h2a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3.5"/><path d="M4.017 11.512a6 6 0 1 0 8.466 8.475"/><path d="M8 16v-6a6 6 0 0 1 6 6z"/></svg>
-                        <span class="nav-text">Reports</span>
-                    </a>
-                    <ul aria-expanded="false">
-                        <li><a href="dashboard-student-performance.html">Student Performance</a></li>
-                        <li><a href="dashboard-student-attendance.html">Attendance</a></li>
-                    </ul>
                 </li>
                 <li>
                     <a class="has-arrow" href="javascript:void()" aria-expanded="false">
@@ -241,26 +222,24 @@
                         <span class="nav-text">Finance</span>
                     </a>
                     <ul aria-expanded="false">
-                        <li><a href="#">Student</a></li>
-                        <li><a href="#">Other Payments</a></li>
+                        <li><a href="parent-dash-payment-history.html">Payment History</a></li>
+                        <li><a href="parent-dash-school-bills">School Bills</a></li>
                     </ul>
                 </li>
-                <li class="nav-label">Administration</li>
+                <!-- <li class="nav-label">Administration</li> -->
                 <li>
                     <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                        <i class="icon-settings menu-icon"></i> <span class="nav-text">Administration</span>
+                        <i class="icon-settings menu-icon"></i> <span class="nav-text">Account</span>
                     </a>
                     <ul aria-expanded="false">
-                        <li><a href="#">System settings & configurations</a></li>
-                        <li><a href="#">User management & access control</a></li>
-                        <li><a href="#">Security & compliance</a></li>
+                        <li><a href="#">Edit Account</a></li
                     </ul>
                 </li>
                 
             </ul>
         </div>
     </sidebar>
-        <!--** Sidebar end **-->
+    <!--** Sidebar end **-->
 
 
         <!--** Content body start **-->
@@ -284,98 +263,81 @@
                         <div class="col-lg-8 col-md-12">
 
                             <div class="row ">
-                                <div class="col-lg-12 col-sm-12 gap-2">
+                                <div class="col-lg-12 col-sm-6 gap-2">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h3 class="card-title text-dark text-center">Current Announcement</h3>
+                                            <h3 class="card-title text-dark text-center">Announcement</h3>
                                             <div class="d-inline-block d-flex flex-column justify-content-center align-items-center">
-                                                <h2 class="text-dark  text-center">Final Exam </h2>
+                                                <h2 class="text-dark  text-center">Final Exam</h2>
                                                 <p class="text-dark mb-0">Please settle your balance at the finance office</p>
-                                                <small class="mt-1 mb-3">To: <span class="badge gradient-1 badge-pill badge-primary">All Parent</span> </small>
-                                                <a href="#" class="btn mb-1 btn-rounded btn-outline-dark btn-xs mt-1"> Add Announce </a>
                                             </div>
                                             <!-- <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span> -->
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-sm-6 gap-2">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h4 class="card-title text-dark text-center">Active Parent</h4>
-                                            <div class="d-inline-block d-flex flex-column justify-content-center align-items-center">
-                                                <h2 class="text-dark  text-center">20%</h2>
-                                                <!-- <p class="text-white mb-0">Jan - March 2019</p> -->
-                                                <a href="#" class="btn mb-1 btn-rounded btn-outline-dark btn-xs mt-1"> View All</a>
-                                            </div>
-                                            <!-- <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span> -->
-                                        </div>
-                                    </div>
-                                </div>
+
+
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4 class="card-title text-dark text-center">Active Teacher</h4>
+                                            <h3 class="card-title text-dark text-center">Tuition Fees</h3>
                                             <div class="d-inline-block d-flex flex-column justify-content-center align-items-center">
-                                                <h2 class="text-dark  text-center">30%</h2>
-                                                <!-- <p class="text-white mb-0">Jan - March 2019</p> -->
-                                                <a href="#" class="btn mb-1 btn-rounded btn-outline-dark btn-xs mt-1"> View All</a>
-                                            </div>
-                                            <!-- <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-sm-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h4 class="card-title text-dark text-center">Active Student</h4>
-                                            <div class="d-inline-block d-flex flex-column justify-content-center align-items-center">
-                                                <h2 class="text-dark  text-center">20%</h2>
-                                                <!-- <p class="text-white mb-0">Jan - March 2019</p> -->
-                                                <a href="#" class="btn mb-1 btn-rounded btn-outline-dark btn-xs mt-1"> View All</a>
+                                                <h3 class="text-dark  text-center">Php 18,500</h3>
+                                                <small class="text-center badge gradient-1 badge-pill badge-primary mb-2"> First Semester</small>
                                             </div>
                                             <!-- <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span> -->
                                         </div>
                                     </div>
                                 </div>
                                 
-
-                                <div class="container gap-1">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">Pie Chart</h4>
-                                                    <div id="flotPie1" class="flot-chart"></div>
-                                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="card-title text-dark text-center">Total Payment</h3>
+                                            <div class="d-inline-block d-flex flex-column justify-content-center align-items-center">
+                                                <h3 class="text-dark  text-center">Php 13,000</h3>
+                                                <small class="text-center badge gradient-1 badge-pill badge-primary mb-2"> 3x Pay</small>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">Pie Chart</h4>
-                                                    <div id="flotPie2" class="flot-chart"></div>
-                                                </div>
-                                            </div>
+                                            <!-- <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span> -->
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-12">
+                                <div class="col-lg-4 col-sm-6">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4 class="card-title">Developer widget- Toastr Bottom Right</h4>
-                                            <div class="card-content">
-                                                <div class="toastr m-t-15">
-                                                    <div class="text-left">
-                                                        <button type="button" class="btn btn-success m-b-10 m-l-5" id="toastr-success-bottom-right">Success</button>
-                                                        <button type="button" class="btn btn-info m-b-10 m-l-5" id="toastr-info-bottom-right">Info</button>
-                                                        <button type="button" class="btn btn-warning m-b-10 m-l-5" id="toastr-warning-bottom-right">Warning</button>
-                                                        <button type="button" class="btn btn-danger m-b-10 m-l-5" id="toastr-danger-bottom-right">Error</button>
-                                                    </div>
+                                            <h3 class="card-title text-dark text-center">Balance</h3>
+                                            <div class="d-inline-block d-flex flex-column justify-content-center align-items-center">
+                                                <h3 class="text-dark  text-center">Php 5,000</h3>
+                                                <a href="#" class="btn mb-1 btn-rounded btn-outline-dark btn-xs mt-1"> View Details</a>
+                                            </div>
+                                            <!-- <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                               
+
+                                <div class="container gap-1">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">School Event Calendar</h4>
+                                                    <canvas id="sales-chart" width="500" height="250"></canvas>
                                                 </div>
                                             </div>
                                         </div>
+                                        <!-- <div class="col-lg-12">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Heading</h4>
+                                                    <canvas id="sales-chart" width="500" height="250"></canvas>
+                                                </div>
+                                            </div>
+                                        </div> -->
                                     </div>
+
                                 </div>
 
                             </div>
@@ -384,45 +346,49 @@
                         <!-- End Left Column -->
 
                         <!-- Start Right Column -->
-                        <aside class="col-lg-4 col-md-12"> 
+                        <div class="col-lg-4 col-md-12"> 
 
                             <div class="card card-widget">
                                 <div class="card-body">
-                                    <h5 class="card-title">Component</h5>
-                                    <h2 class="mt-4">100% </h2>
-                                    <span>Total</span>
+                                    <h5 class="card-title">Grading per Quarter</h5>
                                     <div class="mt-4">
                                         <!-- <h4>30</h4> -->
-                                        <h6>Written Works <span class="pull-right">30%</span></h6>
+                                        <h6>First Quarter <span class="pull-right">96%</span></h6>
                                         <div class="progress mb-3" style="height: 7px">
-                                            <div class="progress-bar bg-primary" style="width: 100%;" role="progressbar"><span class="sr-only">100% Written</span>
+                                            <div class="progress-bar bg-primary" style="width: 96%;" role="progressbar"><span class="sr-only">96%</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="mt-4">
                                         <!-- <h4>50</h4> -->
-                                        <h6 class="m-t-10 text-muted">Performance Task <span class="pull-right">40%</span></h6>
+                                        <h6>Second Quarter<span class="pull-right">90%</span></h6>
                                         <div class="progress mb-3" style="height: 7px">
-                                            <div class="progress-bar bg-success" style="width: 100%;" role="progressbar"><span class="sr-only">100% Performance</span>
+                                            <div class="progress-bar bg-primary" style="width: 90%;" role="progressbar"><span class="sr-only">90%</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="mt-4">
                                         <!-- <h4>20</h4> -->
-                                        <h6 class="m-t-10 text-muted">Quarterly Examination<span class="pull-right">30%</span></h6>
+                                        <h6>Third Quarter<span class="pull-right">91%</span></h6>
                                         <div class="progress mb-3" style="height: 7px">
-                                            <div class="progress-bar bg-warning" style="width: 100%;" role="progressbar"><span class="sr-only">100% Leave</span>
+                                            <div class="progress-bar bg-primary" style="width: 91%;" role="progressbar"><span class="sr-only">91%</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="#" class="btn mb-1 btn-rounded btn-outline-dark btn-xs mt-1">Componnent Setting</a>
+                                    <div class="mt-4">
+                                        <!-- <h4>20</h4> -->
+                                        <h6>Final<span class="pull-right">94%</span></h6>
+                                        <div class="progress mb-3" style="height: 7px">
+                                            <div class="progress-bar bg-primary" style="width: 94%;" role="progressbar"><span class="sr-only">94%</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="card card-widget">
                                 <div class="card-body">
-                                    <h5 class="card-title">Teacher List</h5>
-                                    <small>Quick View</small>
+                                    <h5 class="card-title">Your Student Teachers</h5>
                                     <div class="active-member">
                                         <div class="table-responsive">
                                             <table class="table table-xs mb-0">
@@ -488,7 +454,7 @@
         <!--** Footer start ***-->
         <div class="footer">
             <div class="copyright">
-                <p>Copyright &copy; Designed & Developed by <a href="interaq.net">Interaq.net</a>  <span id="copyright"> </span></p>
+                <p> <span id="copyright"> </span> Copyright &copy; Designed & Developed by <a href="interaq.net">Interaq.net</a></p>
             </div>
         </div>
         <!--** Footer end  ***-->
@@ -499,20 +465,12 @@
     <script src="assets/dashboard/js/custom.min.js"></script>
     <script src="assets/dashboard/js/settings.js"></script>
     <script src="assets/dashboard/js/gleek.js"></script>
-    <script src="assets/dashboard/js/styleSwitcher.js"></script>
+    <!-- <script src="assets/dashboard/js/styleSwitcher.js"></script> -->
 
-    
-     <!--  flot-chart js -->
-     <script src="assets/dashboard/plugins/flot/js/jquery.flot.min.js"></script>
-     <script src="assets/dashboard/plugins/flot/js/jquery.flot.pie.js"></script>
-     <!-- <script src="assets/dashboard/plugins/flot/js/jquery.flot.init.js"></script>  original script - guide-->
-     <script src="assets/global/module/development/flot-init-dev.js"></script>   <!--** custom script***-->
 
-    <!-- Toastr -->
-    <script src="assets/dashboard/plugins/toastr/js/toastr.min.js"></script>
-    <script src="assets/dashboard/plugins/toastr/js/toastr.init.js"></script>
     
     <script src="assets/dashboard/js/custom-js.js"></script>
+
 
     
 </body>
