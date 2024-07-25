@@ -13,16 +13,9 @@
     <!-- Chartist -->
     <link rel="stylesheet" href="assets/dashboard/plugins/chartist/css/chartist.min.css">
     <link rel="stylesheet" href="assets/dashboard/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
-    <link href="assets/dashboard/plugins/toastr/css/toastr.min.css" rel="stylesheet">
     <!-- Custom Stylesheet -->
     <link href="assets/dashboard/css/style.css" rel="stylesheet">
     <link href="assets/dashboard/css/custom-style.css" rel="stylesheet">
-    <style>
-        div#DataTables_Table_0_filter label, div#DataTables_Table_0_length label {
-            display: flex !important;
-            align-items: center;
-        }
-    </style>
 </head>
 <body>
 
@@ -50,14 +43,7 @@
                             <img src="assets/img/DEMO-logo.png" alt="" height="60px">
                         </span>
                     </div>
-                    <!-- <div class="p-1 m-hide "  style="color:#fff;">
-                        <span style="font-size:12px;">School Name</span><br>
-                        <span style="font-size:10px;">HR Management System</span>
-                    </div> -->
-
                 </div>
-                    
-                    
             </div>
         </div> 
         <!--*** Nav header end ***-->
@@ -75,7 +61,7 @@
                 <div class="header-left">
                     <div class="input-group icons">
                         <div class="input-group-prepend">
-                            <span class="input-group-text bg-transparent border-0 pr-2 pr-sm-3" >School Name</span>
+                            <span class="input-group-text bg-transparent border-0 pr-2 pr-sm-3">School Name</span>
                         </div>
                     </div>
                 </div>
@@ -144,14 +130,14 @@
                             <div class="drop-down dropdown-language animated fadeIn  dropdown-menu">
                                 <div class="dropdown-content-body">
                                     <ul>
-                                        <!-- <li><a href="javascript:void()">Super Admin</a></li> -->
-                                        <li><a href="dashboard.html">Admin</a></li>
-                                        <li><a href="teacher-dash.html">Teacher</a></li>
-                                        <li><a href="parent-dash.html">Parent</a></li>
-                                        <!-- github link -->
-                                        <!-- <li><a href="/school-parent-portal/admin-dash">dashboard.html</a></li>
-                                        <li><a href="school-parent-portal/teacher-dash.html">Teacher</a></li> -->
-                                        <!-- <li><a href="school-parent-portal/parent-dash.html">Teacher</a></li> -->
+                                         <!-- <li><a href="javascript:void()">Super Admin</a></li> -->
+                                         <li><a href="dashboard.html">Admin</a></li>
+                                         <li><a href="teacher-dash.html">Teacher</a></li>
+                                         <li><a href="parent-dash.html">Parent</a></li>
+                                         <!-- github link -->
+                                         <!-- <li><a href="/school-parent-portal/admin-dash">dashboard.html</a></li>
+                                         <li><a href="school-parent-portal/teacher-dash.html">Teacher</a></li> -->
+                                         <!-- <li><a href="school-parent-portal/parent-dash.html">Teacher</a></li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -160,7 +146,7 @@
                             <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
                                 <span class="activity active"></span>
                                 <div id="profileImage"></div>
-                                <span id="profileImageUserName" data-name="IQon System"></span>
+                                <span id="profileImageUserName" data-name="iQon System"></span>
                                 <!-- display user image using condition -->
                                 <!-- <img src="./assets/college_assets/images/user/1.png" height="40" width="40" alt=""> -->
                             </div>
@@ -188,7 +174,6 @@
             </div>
         </div>
         <!--** Header end ti-comment-alt **-->
-        
     </header>
 
 
@@ -196,34 +181,37 @@
     <sidebar class="nk-sidebar">           
         <div class="nk-nav-scroll">
             <ul class="metismenu" id="menu">
-                <li class="nav-label">Admin Menu</li>
+                <li class="nav-label">Teacher Portal</li>
                 <li>
-                    <a href="dashboard.html" aria-expanded="false">
+                    <a href="teacher-dash.html" aria-expanded="false">
                         <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
                     </a>
                 </li>
                 <li>
                     <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                        <i class="icon-user menu-icon"></i> <span class="nav-text">Manage Users</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> 
+                        <span class="nav-text">Parent</span>
                     </a>
                     <ul aria-expanded="false">
-                        <li><a href="dashboard-manage-teacher.html">Teacher</a></li>
-                        <li><a href="dashboard-manage-parent.html">Parent</a></li>
+                        <li><a href="#">Parent List</a></li>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Lorem</a></li>
                     </ul>
                 </li>
                 <li>
                     <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                        <i class="icon-graduation menu-icon"></i> <span class="nav-text">Manage Students</span>
+                        <i class="icon-graduation menu-icon"></i> <span class="nav-text">Manage Student</span>
                     </a>
                     <ul aria-expanded="false">
-                        <li><a href="dashboard-student.html">Student List</a></li>
-                        <li><a href="dashboard-grade.html">Grades</a></li>
+                        <li><a href="#">Grades</a></li>
+                        <li><a href="#">Attendance</a></li>
+                        <li><a href="#">Behavior</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="dashboard-announcement.html" aria-expanded="false">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-megaphone"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
-                        <span class="nav-text">Announcement</span>
+                    <a href="teacher-dash-message.html" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-messages-square"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg>
+                        <span class="nav-text">Message</span>
                     </a>
                 </li>
                 <li>
@@ -232,36 +220,25 @@
                         <span class="nav-text">Reports</span>
                     </a>
                     <ul aria-expanded="false">
-                        <li><a href="dashboard-student-performance.html">Student Performance</a></li>
-                        <li><a href="dashboard-student-attendance.html">Attendance</a></li>
+                        <li><a href="#">Student Performance</a></li>
+                        <li><a href="#">Attendance</a></li>
                     </ul>
                 </li>
+                <!-- <li class="nav-label">Administration</li> -->
                 <li>
                     <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hand-coins"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"/><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 16 6 6"/><circle cx="16" cy="9" r="2.9"/><circle cx="6" cy="5" r="3"/></svg>
-                        <span class="nav-text">Finance</span>
+                        <i class="icon-settings menu-icon"></i> <span class="nav-text">Account</span>
                     </a>
                     <ul aria-expanded="false">
-                        <li><a href="#">Student</a></li>
-                        <li><a href="#">Other Payments</a></li>
-                    </ul>
-                </li>
-                <li class="nav-label">Administration</li>
-                <li>
-                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                        <i class="icon-settings menu-icon"></i> <span class="nav-text">Administration</span>
-                    </a>
-                    <ul aria-expanded="false">
-                        <li><a href="#">System settings & configurations</a></li>
-                        <li><a href="#">User management & access control</a></li>
-                        <li><a href="#">Security & compliance</a></li>
+                        <li><a href="#">Edit Account</a></li>
                     </ul>
                 </li>
                 
             </ul>
         </div>
     </sidebar>
-        <!--** Sidebar end **-->
+    <!--** Sidebar end **-->
+
 
         <!--** Content body start **-->
         <main class="content-body">
@@ -283,126 +260,105 @@
                         <!-- Start Right Column -->
                         <div class="col-lg-12 col-md-12">
                             <div class="row">
-                                <div class="col-12 pb-3">
-                                    <buttun class="btn btn-primary mr-2 shadow" data-toggle="tooltip" data-placement="bottom" title="Import CSV File">
-                                        <i ><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-upload"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg></i>
-                                        Import Students List
-                                    </buttun>
-                                    <buttun class="btn btn-light mr-2 shadow" data-toggle="tooltip" data-placement="bottom" title="Sync Data From SMIS">
-                                        <i><svg style="margin-bottom:2px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-refresh-ccw"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg></i>
-                                        Sync Data
-                                    </buttun>
-                                </div>
-                                <div class="col-12">
-                                    <div class="card px-0 py-3">
+                                <div class="col-8 pb-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h4>Inbox</h4>
+                                            </div>
                                             <div class="table-responsive">
-                                                <h3 class="px-4">Student Registered List</h3>
-                                                <table class="table table-striped table-bordered zero-configuration">
+                                                <table class="table">
                                                     <thead>
                                                         <tr>
-                                                            <th>Name</th>
-                                                            <th>Adviser</th>
-                                                            <th>Grade</th>
-                                                            <th>First Quarter</th>
-                                                            <th>Second Quarter</th>                                                            
-                                                            <th>Third Quarter</th>
-                                                            <th>Finals</th>
-                                                            <th>action</th>
+                                                            <th width=""> </th>
+                                                            <th width="">From</th>
+                                                            <th width="30%">Message</th>
+                                                            <th width="">Date</th>
+                                                            <th width="14%">Action</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>Jhon Elmar</td>
-                                                            <td>Marie</td>
-                                                            <td>Grade 1</td>
-                                                            <td class="text-center">85 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
-                                                            <td class="text-center">90 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
-                                                            <td class="text-center">87 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
-                                                            <td class="text-center">93 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
+                                                            <th style="vertical-align: middle;"><input type="checkbox" name="check_message" id="check_message" value=""></th>
+                                                            <td><img src="./assets/dashboard/images/avatar/4.jpg" class=" rounded-circle mr-3" alt=""><span>Christine</span></td>
+                                                            <td>Hi Ma'am, Lorem ipsum dollor.......</td>
+                                                            <td>January 22</td>
                                                             <td>
                                                                 <span>
-                                                                    <a href="#" class="custom-btn-action btn-success" data-toggle="tooltip" data-placement="left" title="Parent can view Grades">
-                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></i>
+                                                                    <a href="#" class="custom-btn-action btn-primary" data-toggle="tooltip" data-placement="left" title="Open Message">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></i>
                                                                     </a>
                                                                 </span>
                                                                 <span class="m-1">
-                                                                    <a href="#" class="custom-btn-action btn-primary" data-toggle="tooltip" data-placement="left" title="View Grade Details">
-                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-cog"><path d="M2 21a8 8 0 0 1 10.434-7.62"/><circle cx="10" cy="8" r="5"/><circle cx="18" cy="18" r="3"/><path d="m19.5 14.3-.4.9"/><path d="m16.9 20.8-.4.9"/><path d="m21.7 19.5-.9-.4"/><path d="m15.2 16.9-.9-.4"/><path d="m21.7 16.5-.9.4"/><path d="m15.2 19.1-.9.4"/><path d="m19.5 21.7-.4-.9"/><path d="m16.9 15.2-.4-.9"/></svg></i>
+                                                                    <a href="#" class="custom-btn-action btn-danger" data-toggle="tooltip" data-placement="left" title="Delete Message">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg></i>
                                                                     </a>
                                                                 </span>
                                                             </td>
                                                         </tr>
-
                                                         <tr>
-                                                            <td>Chan A.</td>
-                                                            <td>Jhon</td>
-                                                            <td>Grade 10</td>
-                                                            <td class="text-center">87 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
-                                                            <td class="text-center"><span class="badge badge-pill badge-waning" style="margin-bottom:2px;">No Grades</span><span>
-                                                                <a href="#" class="custom-btn-action rounded btn-warning " data-toggle="tooltip" data-placement="left" title="Notify the Teacher for this Grade">
-                                                                   Notify
-                                                                </a>
-                                                            </span></td>
-                                                            <td class="text-center">93 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
-                                                            <td class="text-center">96 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
+                                                            <th style="vertical-align: middle;"><input type="checkbox" name="check_message" id="check_message" value=""></th>
+                                                            <td><img src="./assets/dashboard/images/avatar/4.jpg" class=" rounded-circle mr-3" alt=""><span>Christine</span></td>
+                                                            <td>Hi Ma'am, Lorem ipsum dollor.......</td>
+                                                            <td>January 22</td>
                                                             <td>
                                                                 <span>
-                                                                    <a href="#" class="custom-btn-action btn-success" data-toggle="tooltip" data-placement="left" title="Parent can view grades">
-                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></i>
+                                                                    <a href="#" class="custom-btn-action btn-primary" data-toggle="tooltip" data-placement="left" title="Open Message">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></i>
                                                                     </a>
                                                                 </span>
                                                                 <span class="m-1">
-                                                                    <a href="#" class="custom-btn-action btn-primary" data-toggle="tooltip" data-placement="left" title="View Grade Details">
-                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-cog"><path d="M2 21a8 8 0 0 1 10.434-7.62"/><circle cx="10" cy="8" r="5"/><circle cx="18" cy="18" r="3"/><path d="m19.5 14.3-.4.9"/><path d="m16.9 20.8-.4.9"/><path d="m21.7 19.5-.9-.4"/><path d="m15.2 16.9-.9-.4"/><path d="m21.7 16.5-.9.4"/><path d="m15.2 19.1-.9.4"/><path d="m19.5 21.7-.4-.9"/><path d="m16.9 15.2-.4-.9"/></svg></i>
+                                                                    <a href="#" class="custom-btn-action btn-danger" data-toggle="tooltip" data-placement="left" title="Delete Message">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg></i>
                                                                     </a>
                                                                 </span>
                                                             </td>
                                                         </tr>
-
                                                         <tr>
-                                                            <td>Sarah</td>
-                                                            <td>Christine</td>
-                                                            <td>Grade 11</td>
-                                                            <td class="text-center">85 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
-                                                            <td class="text-center">90 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
-                                                            <td class="text-center">87 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
-                                                            <td class="text-center"><span class="badge badge-pill badge-waning" style="margin-bottom:2px;">No Grades</span><span>
-                                                                <a href="#" class="custom-btn-action rounded btn-warning " data-toggle="tooltip" data-placement="left" title="Notify the Teacher for this Grade">
-                                                                   Notify
-                                                                </a>
-                                                            </span></td>
+                                                            <th style="vertical-align: middle;"><input type="checkbox" name="check_message" id="check_message" value=""></th>
+                                                            <td><img src="./assets/dashboard/images/avatar/4.jpg" class=" rounded-circle mr-3" alt=""><span>Christine</span></td>
+                                                            <td>Hi Ma'am, Lorem ipsum dollor.......</td>
+                                                            <td>January 22</td>
                                                             <td>
                                                                 <span>
-                                                                    <a href="#" class="custom-btn-action disabled" data-toggle="tooltip" data-placement="left" title="Parent forbidden to view">
-                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-off"><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><line x1="2" x2="22" y1="2" y2="22"/></svg></i>
-                                                                    </a>
+                                                                    <span href="#" class="custom-btn-action text-dark">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-open"><path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z"/><path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10"/></svg></i>
+                                                                    </span>
                                                                 </span>
                                                                 <span class="m-1">
-                                                                    <a href="#" class="custom-btn-action btn-primary" data-toggle="tooltip" data-placement="left" title="View Grade Details">
-                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-cog"><path d="M2 21a8 8 0 0 1 10.434-7.62"/><circle cx="10" cy="8" r="5"/><circle cx="18" cy="18" r="3"/><path d="m19.5 14.3-.4.9"/><path d="m16.9 20.8-.4.9"/><path d="m21.7 19.5-.9-.4"/><path d="m15.2 16.9-.9-.4"/><path d="m21.7 16.5-.9.4"/><path d="m15.2 19.1-.9.4"/><path d="m19.5 21.7-.4-.9"/><path d="m16.9 15.2-.4-.9"/></svg></i>
+                                                                    <a href="#" class="custom-btn-action btn-danger" data-toggle="tooltip" data-placement="left" title="Delete Message">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg></i>
                                                                     </a>
                                                                 </span>
                                                             </td>
                                                         </tr>
-                                                       
                                                     </tbody>
-                                                    <tfoot>
-                                                        <tr>
-                                                            <th>Name</th>
-                                                            <th>Adviser</th>
-                                                            <th>Grade</th>
-                                                            <th>First Quarter</th>
-                                                            <th>Second Quarter</th>                                                            
-                                                            <th>Third Quarter</th>
-                                                            <th>Finals</th>
-                                                            <th>action</th>
-                                                        </tr>
-                                                    </tfoot>
                                                 </table>
                                             </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h4>View Message</h4>
+                                            </div>
+                                            <div class="w-100 text-dark p-3 rounded" style="background-color: #f2f2f2;">
+                                                <p>From: Ms. Christine</p>
+                                                <br>
+                                                <p> Hello Ma'am,</p>
+                                                <p> Lorem ipsum dolor sit amet consectetur adipiscing elit auctor torquent morbi, porta hac vehicula habitant sociis vestibulum curabitur enim feugiat, dictumst blandit a sem nec dapibus aenean turpis eleifend.</p>
+                                            </div>
+                                            <div class="w-100 mt-2 ">
+                                                <form action="">
+                                                    <textarea class="form-control h-50px rounded" rows="6" id="message" placeholder="Reply Message"></textarea>
+                                                    <button class="btn btn-primary w-100 mt-3">Send</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                         </div>
                         <!-- End Right Column -->

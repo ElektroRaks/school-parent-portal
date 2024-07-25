@@ -280,106 +280,173 @@
             <div class="container-fluid">
 
                 <div class="row mt-1">
+                        <!-- Start left Column -->
+                        <!-- <div class="col-lg-3 col-md-12"> 
+
+                            <div class="card card-widget">
+                                <div class="card-body">
+                                    <h5 class="card-title">Add User</h5>
+                                    <div class="basic-form">
+                                        <form>
+                                            
+                                            <div class="form-group">
+                                                <input type="text" name="user_role" Id="user_role" class="form-control input-rounded-" placeholder="Hidden" value="role-teacher">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="fullname">Fullname</label>
+                                                <input type="text" name="fullname" Id="fullname" class="form-control input-rounded-" placeholder="Fullname" value="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="username">Username</label>
+                                                <input type="text" name="username" Id="username" class="form-control input-rounded-" placeholder="Username" value="">
+                                            </div> 
+                                            <div class="form-group">
+                                                <label for="select_grade">Grade Adviser</label>
+                                                <select name="select_grade" class="form-control input-rounded-" id="select_grade">
+                                                    <option>Select Grade</option>
+                                                    <option>Grade 1</option>
+                                                    <option>Grade 2</option>
+                                                    <option>Grade 3</option>
+                                                    <option>Grade 4</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password">Password</label>
+                                                <input type="password" name="password" Id="password" class="form-control input-rounded-" placeholder="User Password" value="">
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="button" name="submit_user" id="submit_user" class="btn mb-1 btn-primary w-100">
+                                                    Add User 
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> -->
+                        <!-- End left Column -->
+
+
                         <!-- Start Right Column -->
                         <div class="col-lg-12 col-md-12">
+
                             <div class="row">
+                                
                                 <div class="col-12 pb-3">
                                     <buttun class="btn btn-primary mr-2 shadow" data-toggle="tooltip" data-placement="bottom" title="Import CSV File">
                                         <i ><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-upload"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg></i>
-                                        Import Students List
+                                        Import Teacher Data
                                     </buttun>
                                     <buttun class="btn btn-light mr-2 shadow" data-toggle="tooltip" data-placement="bottom" title="Sync Data From SMIS">
                                         <i><svg style="margin-bottom:2px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-refresh-ccw"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg></i>
-                                        Sync Data
+                                        Sync Data From SMIS
                                     </buttun>
                                 </div>
                                 <div class="col-12">
                                     <div class="card px-0 py-3">
                                             <div class="table-responsive">
-                                                <h3 class="px-4">Student Registered List</h3>
                                                 <table class="table table-striped table-bordered zero-configuration">
                                                     <thead>
                                                         <tr>
                                                             <th>Name</th>
                                                             <th>Adviser</th>
-                                                            <th>Grade</th>
-                                                            <th>First Quarter</th>
-                                                            <th>Second Quarter</th>                                                            
-                                                            <th>Third Quarter</th>
-                                                            <th>Finals</th>
-                                                            <th>action</th>
+                                                            <th>Role</th>
+                                                            <th width="14%">Handle Students</th>
+                                                            <th>Date Added</th>                                                            
+                                                            <th>Status</th>
+                                                            <th width="18%">action</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>Jhon Elmar</td>
                                                             <td>Marie</td>
                                                             <td>Grade 1</td>
-                                                            <td class="text-center">85 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
-                                                            <td class="text-center">90 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
-                                                            <td class="text-center">87 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
-                                                            <td class="text-center">93 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
+                                                            <td>Teacher</td>
+                                                            <td>20</td>
+                                                            <td>2011/04/25</td>
+                                                            <td><span class="badge badge-pill badge-success text-white">Active</span></td>
                                                             <td>
+                                                                <span class="m-1">
+                                                                    <a href="#" class="custom-btn-action btn-dark text-white" data-toggle="tooltip" data-placement="left" title="Invite this user">
+                                                                        Invite
+                                                                    </a>
+                                                                </span>
                                                                 <span>
-                                                                    <a href="#" class="custom-btn-action btn-success" data-toggle="tooltip" data-placement="left" title="Parent can view Grades">
-                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></i>
+                                                                    <a href="#" class="custom-btn-action btn-primary" data-toggle="tooltip" data-placement="left" title="View Profile">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-cog"><path d="M2 21a8 8 0 0 1 10.434-7.62"/><circle cx="10" cy="8" r="5"/><circle cx="18" cy="18" r="3"/><path d="m19.5 14.3-.4.9"/><path d="m16.9 20.8-.4.9"/><path d="m21.7 19.5-.9-.4"/><path d="m15.2 16.9-.9-.4"/><path d="m21.7 16.5-.9.4"/><path d="m15.2 19.1-.9.4"/><path d="m19.5 21.7-.4-.9"/><path d="m16.9 15.2-.4-.9"/></svg></i>
                                                                     </a>
                                                                 </span>
                                                                 <span class="m-1">
-                                                                    <a href="#" class="custom-btn-action btn-primary" data-toggle="tooltip" data-placement="left" title="View Grade Details">
-                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-cog"><path d="M2 21a8 8 0 0 1 10.434-7.62"/><circle cx="10" cy="8" r="5"/><circle cx="18" cy="18" r="3"/><path d="m19.5 14.3-.4.9"/><path d="m16.9 20.8-.4.9"/><path d="m21.7 19.5-.9-.4"/><path d="m15.2 16.9-.9-.4"/><path d="m21.7 16.5-.9.4"/><path d="m15.2 19.1-.9.4"/><path d="m19.5 21.7-.4-.9"/><path d="m16.9 15.2-.4-.9"/></svg></i>
+                                                                    <a href="#" class="custom-btn-action btn-danger" data-toggle="tooltip" data-placement="left" title="Move to Achive">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-x"><path d="M2 21a8 8 0 0 1 11.873-7"/><circle cx="10" cy="8" r="5"/><path d="m17 17 5 5"/><path d="m22 17-5 5"/></svg></i>
+                                                                    </a>
+                                                                </span>
+                                                                <span class="m-1">
+                                                                    <a href="#" class="custom-btn-action btn-light" data-toggle="tooltip" data-placement="left" title="Can Log-in">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock-keyhole-open"><circle cx="12" cy="16" r="1"/><rect width="18" height="12" x="3" y="10" rx="2"/><path d="M7 10V7a5 5 0 0 1 9.33-2.5"/></svg></i>
                                                                     </a>
                                                                 </span>
                                                             </td>
                                                         </tr>
 
                                                         <tr>
-                                                            <td>Chan A.</td>
                                                             <td>Jhon</td>
                                                             <td>Grade 10</td>
-                                                            <td class="text-center">87 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
-                                                            <td class="text-center"><span class="badge badge-pill badge-waning" style="margin-bottom:2px;">No Grades</span><span>
-                                                                <a href="#" class="custom-btn-action rounded btn-warning " data-toggle="tooltip" data-placement="left" title="Notify the Teacher for this Grade">
-                                                                   Notify
-                                                                </a>
-                                                            </span></td>
-                                                            <td class="text-center">93 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
-                                                            <td class="text-center">96 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
+                                                            <td>Teacher</td>
+                                                            <td>20</td>
+                                                            <td>2011/04/25</td>
+                                                            <td><span class="badge badge-pill badge-success text-white">Active</span></td>
                                                             <td>
+                                                                <span class="m-1">
+                                                                    <a href="#" class="custom-btn-action btn-dark text-white" data-toggle="tooltip" data-placement="left" title="Invite this user">
+                                                                        Invite
+                                                                    </a>
+                                                                </span>
                                                                 <span>
-                                                                    <a href="#" class="custom-btn-action btn-success" data-toggle="tooltip" data-placement="left" title="Parent can view grades">
-                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></i>
+                                                                    <a href="#" class="custom-btn-action btn-primary" data-toggle="tooltip" data-placement="left" title="View Profile">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-cog"><path d="M2 21a8 8 0 0 1 10.434-7.62"/><circle cx="10" cy="8" r="5"/><circle cx="18" cy="18" r="3"/><path d="m19.5 14.3-.4.9"/><path d="m16.9 20.8-.4.9"/><path d="m21.7 19.5-.9-.4"/><path d="m15.2 16.9-.9-.4"/><path d="m21.7 16.5-.9.4"/><path d="m15.2 19.1-.9.4"/><path d="m19.5 21.7-.4-.9"/><path d="m16.9 15.2-.4-.9"/></svg></i>
                                                                     </a>
                                                                 </span>
                                                                 <span class="m-1">
-                                                                    <a href="#" class="custom-btn-action btn-primary" data-toggle="tooltip" data-placement="left" title="View Grade Details">
-                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-cog"><path d="M2 21a8 8 0 0 1 10.434-7.62"/><circle cx="10" cy="8" r="5"/><circle cx="18" cy="18" r="3"/><path d="m19.5 14.3-.4.9"/><path d="m16.9 20.8-.4.9"/><path d="m21.7 19.5-.9-.4"/><path d="m15.2 16.9-.9-.4"/><path d="m21.7 16.5-.9.4"/><path d="m15.2 19.1-.9.4"/><path d="m19.5 21.7-.4-.9"/><path d="m16.9 15.2-.4-.9"/></svg></i>
+                                                                    <a href="#" class="custom-btn-action btn-danger" data-toggle="tooltip" data-placement="left" title="Move to Achive">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-x"><path d="M2 21a8 8 0 0 1 11.873-7"/><circle cx="10" cy="8" r="5"/><path d="m17 17 5 5"/><path d="m22 17-5 5"/></svg></i>
+                                                                    </a>
+                                                                </span>
+                                                                <span class="m-1">
+                                                                    <a href="#" class="custom-btn-action btn-light" data-toggle="tooltip" data-placement="left" title="Can Log-in">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock-keyhole-open"><circle cx="12" cy="16" r="1"/><rect width="18" height="12" x="3" y="10" rx="2"/><path d="M7 10V7a5 5 0 0 1 9.33-2.5"/></svg></i>
                                                                     </a>
                                                                 </span>
                                                             </td>
                                                         </tr>
 
                                                         <tr>
-                                                            <td>Sarah</td>
                                                             <td>Christine</td>
                                                             <td>Grade 11</td>
-                                                            <td class="text-center">85 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
-                                                            <td class="text-center">90 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
-                                                            <td class="text-center">87 <span class="badge badge-pill badge-primary" style="margin-bottom:2px;">7 subject's</span></td>
-                                                            <td class="text-center"><span class="badge badge-pill badge-waning" style="margin-bottom:2px;">No Grades</span><span>
-                                                                <a href="#" class="custom-btn-action rounded btn-warning " data-toggle="tooltip" data-placement="left" title="Notify the Teacher for this Grade">
-                                                                   Notify
-                                                                </a>
-                                                            </span></td>
+                                                            <td>Teacher</td>
+                                                            <td>20</td>
+                                                            <td>2011/04/25</td>
+                                                            <td><span class="badge badge-pill badge-light text-white">Inactive</span></td>
                                                             <td>
+                                                                <span class="m-1">
+                                                                    <a href="#" class="custom-btn-action btn-light text-dark disabled" data-toggle="tooltip" data-placement="left" title="Done Invite">
+                                                                        Invited
+                                                                    </a>
+                                                                </span>
                                                                 <span>
-                                                                    <a href="#" class="custom-btn-action disabled" data-toggle="tooltip" data-placement="left" title="Parent forbidden to view">
-                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-off"><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><line x1="2" x2="22" y1="2" y2="22"/></svg></i>
+                                                                    <a href="#" class="custom-btn-action btn-primary" data-toggle="tooltip" data-placement="left" title="View Profile">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-cog"><path d="M2 21a8 8 0 0 1 10.434-7.62"/><circle cx="10" cy="8" r="5"/><circle cx="18" cy="18" r="3"/><path d="m19.5 14.3-.4.9"/><path d="m16.9 20.8-.4.9"/><path d="m21.7 19.5-.9-.4"/><path d="m15.2 16.9-.9-.4"/><path d="m21.7 16.5-.9.4"/><path d="m15.2 19.1-.9.4"/><path d="m19.5 21.7-.4-.9"/><path d="m16.9 15.2-.4-.9"/></svg></i>
                                                                     </a>
                                                                 </span>
                                                                 <span class="m-1">
-                                                                    <a href="#" class="custom-btn-action btn-primary" data-toggle="tooltip" data-placement="left" title="View Grade Details">
-                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-cog"><path d="M2 21a8 8 0 0 1 10.434-7.62"/><circle cx="10" cy="8" r="5"/><circle cx="18" cy="18" r="3"/><path d="m19.5 14.3-.4.9"/><path d="m16.9 20.8-.4.9"/><path d="m21.7 19.5-.9-.4"/><path d="m15.2 16.9-.9-.4"/><path d="m21.7 16.5-.9.4"/><path d="m15.2 19.1-.9.4"/><path d="m19.5 21.7-.4-.9"/><path d="m16.9 15.2-.4-.9"/></svg></i>
+                                                                    <a href="#" class="custom-btn-action btn-danger" data-toggle="tooltip" data-placement="left" title="Move to Achive">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-x"><path d="M2 21a8 8 0 0 1 11.873-7"/><circle cx="10" cy="8" r="5"/><path d="m17 17 5 5"/><path d="m22 17-5 5"/></svg></i>
+                                                                    </a>
+                                                                </span>
+                                                                <span class="m-1">
+                                                                    <a href="#" class="custom-btn-action btn-warning" data-toggle="tooltip" data-placement="left" title="Prohibited to login">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock-keyhole"><circle cx="12" cy="16" r="1"/><rect x="3" y="10" width="18" height="12" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/></svg></i>
                                                                     </a>
                                                                 </span>
                                                             </td>
@@ -390,11 +457,10 @@
                                                         <tr>
                                                             <th>Name</th>
                                                             <th>Adviser</th>
-                                                            <th>Grade</th>
-                                                            <th>First Quarter</th>
-                                                            <th>Second Quarter</th>                                                            
-                                                            <th>Third Quarter</th>
-                                                            <th>Finals</th>
+                                                            <th>Role</th>
+                                                            <th>Handle Student</th>
+                                                            <th>Date Added</th>                                                            
+                                                            <th>Status</th>
                                                             <th>action</th>
                                                         </tr>
                                                     </tfoot>

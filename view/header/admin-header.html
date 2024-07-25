@@ -1,5 +1,3 @@
-<!-- Template by Rowell - 2024 -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +11,7 @@
     <!-- Chartist -->
     <link rel="stylesheet" href="assets/dashboard/plugins/chartist/css/chartist.min.css">
     <link rel="stylesheet" href="assets/dashboard/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <link href="assets/dashboard/plugins/toastr/css/toastr.min.css" rel="stylesheet">
     <!-- Custom Stylesheet -->
     <link href="assets/dashboard/css/style.css" rel="stylesheet">
     <link href="assets/dashboard/css/custom-style.css" rel="stylesheet">
@@ -43,7 +42,14 @@
                             <img src="assets/img/DEMO-logo.png" alt="" height="60px">
                         </span>
                     </div>
+                    <div class="p-1 m-hide "  style="color:#fff;">
+                        <span style="font-size:12px;">School Name</span><br>
+                        <span style="font-size:10px;">HR Management System</span>
+                    </div>
+
                 </div>
+                    
+                    
             </div>
         </div> 
         <!--*** Nav header end ***-->
@@ -60,9 +66,15 @@
                 </div>
                 <div class="header-left">
                     <div class="input-group icons">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text bg-transparent border-0 pr-2 pr-sm-3">School Name</span>
-                        </div>
+                        <!-- <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent border-0 pr-2 pr-sm-3" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
+                        </div> -->
+                        <!-- <input type="search" class="form-control" placeholder="Search Dashboard" aria-label="Search Dashboard">
+                        <div class="drop-down   d-md-none">
+							<form action="#">
+								<input type="text" class="form-control" placeholder="Search">
+							</form>
+                        </div> -->
                     </div>
                 </div>
                 <div class="header-right">
@@ -130,14 +142,14 @@
                             <div class="drop-down dropdown-language animated fadeIn  dropdown-menu">
                                 <div class="dropdown-content-body">
                                     <ul>
-                                         <!-- <li><a href="javascript:void()">Super Admin</a></li> -->
-                                         <li><a href="dashboard.html">Admin</a></li>
-                                         <li><a href="teacher-dash.html">Teacher</a></li>
-                                         <li><a href="parent-dash.html">Parent</a></li>
-                                         <!-- github link -->
-                                         <!-- <li><a href="/school-parent-portal/admin-dash">dashboard.html</a></li>
-                                         <li><a href="school-parent-portal/teacher-dash.html">Teacher</a></li> -->
-                                         <!-- <li><a href="school-parent-portal/parent-dash.html">Teacher</a></li> -->
+                                        <!-- <li><a href="javascript:void()">Super Admin</a></li> -->
+                                        <li><a href="dashboard.html">Admin</a></li>
+                                        <li><a href="teacher-dash.html">Teacher</a></li>
+                                        <li><a href="parent-dash.html">Parent</a></li>
+                                        <!-- github link -->
+                                        <!-- <li><a href="/school-parent-portal/admin-dash">dashboard.html</a></li>
+                                        <li><a href="school-parent-portal/teacher-dash.html">Teacher</a></li> -->
+                                        <!-- <li><a href="school-parent-portal/parent-dash.html">Teacher</a></li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -146,7 +158,7 @@
                             <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
                                 <span class="activity active"></span>
                                 <div id="profileImage"></div>
-                                <span id="profileImageUserName" data-name="iQon System"></span>
+                                <span id="profileImageUserName" data-name="IQon System"></span>
                                 <!-- display user image using condition -->
                                 <!-- <img src="./assets/college_assets/images/user/1.png" height="40" width="40" alt=""> -->
                             </div>
@@ -154,15 +166,15 @@
                                 <div class="dropdown-content-body">
                                     <ul>
                                         <li>
-                                            <a href="#"><i class="icon-user"></i> <span>Profile</span></a>
+                                            <a href="app-profile.html"><i class="icon-user"></i> <span>Profile</span></a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill badge-primary">3</div></a>
+                                            <a href="email-inbox.html"><i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill badge-primary">3</div></a>
                                         </li>
                                         
                                         <hr class="my-2">
                                         <li>
-                                            <a href="#"><i class="icon-lock"></i> <span>Lock Screen</span></a>
+                                            <a href="page-lock.html"><i class="icon-lock"></i> <span>Lock Screen</span></a>
                                         </li>
                                         <li><a href="/school-parent-portal/index.html"><i class="icon-key"></i> <span>Logout</span></a></li>
                                     </ul>
@@ -181,27 +193,45 @@
     <sidebar class="nk-sidebar">           
         <div class="nk-nav-scroll">
             <ul class="metismenu" id="menu">
-                <li class="nav-label">Parent Portal</li>
+                <li class="nav-label">Admin Menu</li>
                 <li>
-                    <a href="parent-dash.html" aria-expanded="false">
+                    <a href="dashboard.html" aria-expanded="false">
                         <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
                     </a>
                 </li>
                 <li>
                     <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                        <i class="icon-graduation menu-icon"></i> <span class="nav-text">My Student</span>
+                        <i class="icon-user menu-icon"></i> <span class="nav-text">Manage Users</span>
                     </a>
                     <ul aria-expanded="false">
-                        <li><a href="parent-dash-grades.html">Grades</a></li>
-                        <li><a href="parent-dash-attendance.html">Attendance</a></li>
-                        <!-- <li><a href="parent-dash-Behavior.html">Behavior</a></li> -->
+                        <li><a href="dashboard-manage-teacher.html">Teacher</a></li>
+                        <li><a href="dashboard-manage-parent.html">Parent</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="message.html" aria-expanded="false">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-messages-square"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg>
-                        <span class="nav-text">Message</span>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <i class="icon-graduation menu-icon"></i> <span class="nav-text">Manage Students</span>
                     </a>
+                    <ul aria-expanded="false">
+                        <li><a href="dashboard-student.html">Student List</a></li>
+                        <li><a href="dashboard-grade.html">Grades</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="dashboard-announcement.html" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-megaphone"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
+                        <span class="nav-text">Announcement</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-pie-chart"><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M16 22h2a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3.5"/><path d="M4.017 11.512a6 6 0 1 0 8.466 8.475"/><path d="M8 16v-6a6 6 0 0 1 6 6z"/></svg>
+                        <span class="nav-text">Reports</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="dashboard-student-performance.html">Student Performance</a></li>
+                        <li><a href="dashboard-student-attendance.html">Attendance</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a class="has-arrow" href="javascript:void()" aria-expanded="false">
@@ -209,108 +239,41 @@
                         <span class="nav-text">Finance</span>
                     </a>
                     <ul aria-expanded="false">
-                        <li><a href="parent-dash-payment-history.html">Payment History</a></li>
-                        <li><a href="parent-dash-school-bills">School Bills</a></li>
+                        <li><a href="#">Student</a></li>
+                        <li><a href="#">Other Payments</a></li>
                     </ul>
                 </li>
-                <!-- <li class="nav-label">Administration</li> -->
+                <li class="nav-label">Administration</li>
                 <li>
                     <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                        <i class="icon-settings menu-icon"></i> <span class="nav-text">Account</span>
+                        <i class="icon-settings menu-icon"></i> <span class="nav-text">Administration</span>
                     </a>
                     <ul aria-expanded="false">
-                        <li><a href="#">Edit Account</a></li
+                        <li><a href="#">System settings & configurations</a></li>
+                        <li><a href="#">User management & access control</a></li>
+                        <li><a href="#">Security & compliance</a></li>
                     </ul>
                 </li>
                 
             </ul>
         </div>
     </sidebar>
-    <!--** Sidebar end **-->
+        <!--** Sidebar end **-->
 
 
         <!--** Content body start **-->
         <main class="content-body">
 
-            <!-- Main content, all include nga view layout kada page dani e display -->
-            <div class="row page-titles mx-0">
-                <div class="col p-md-0">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
-                        <!-- <li class="breadcrumb-item active"><a href="javascript:void(0)">Home</a></li> -->
-                    </ol>
-                </div>
-            </div>
-            <!-- row -->
 
-            <div class="container-fluid">
+            <!-- mga content sa page ani -->
 
-                <div class="row mt-1">
-                        <!-- Start Right Column -->
-                        <div class="col-lg-12 col-md-12">
-                            <div class="row">
-                                <!-- <div class="col-12 p-4 text- d-flex flex-column justify-content-center align-items-center" style="height: 50dvh;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-lock-2"><path d="M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v1"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><rect width="8" height="5" x="2" y="13" rx="1"/><path d="M8 13v-2a2 2 0 1 0-4 0v2"/></svg>
-                                    <buttun class="btn btn-primary mr-2 shadow" data-toggle="tooltip" data-placement="bottom" title="Import CSV File">
-                                        <i ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-to-line"><path d="M12 17V3"/><path d="m6 11 6 6 6-6"/><path d="M19 21H5"/></svg></i>
-                                        Request for grades
-                                    </buttun>
-                                </div> -->
 
-                                <div class="col-12 pb-3">
-                                    <div class="card px-0 py-3">
-                                        <div class="table-responsive">
-                                            <h3 class="px-4">Attendance Record</h3>
-                                            <table class="table table-striped table-bordered zero-configuration">
-                                                <thead>
-                                                    <tr>
-                                                        <th width="70%">Date</th>
-                                                        <th width="10%">In</th>
-                                                        <th width="10%">Out</th>
-                                                        <th width="10%">Status</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>2024/04/25</td>
-                                                        <td>08:01 am</td>
-                                                        <td>03:00 pm</td>
-                                                        <td><span class="badge badge-pill badge-success text-white">Presnt</span></td>
-                                                    </tr>
 
-                                                    <tr>
-                                                        <td>2024/04/26</td>
-                                                        <td>Skip to Tap</td>
-                                                        <td>Skip to Tap</td>
-                                                        <td><span class="badge badge-pill badge-danger text-white">Absent</span></td>
-                                                    </tr>
 
-                                                   
-                                                </tbody>
-                                                <tfoot>
-                                                    <tr>
-                                                        <th width="70%">Date</th>
-                                                        <th width="10%">In</th>
-                                                        <th width="10%">Out</th>
-                                                        <th width="10%">Status</th>
-                                                    </tr>
-                                                </tfoot>
-                                            </table>
-                                        </div>
-                                </div>
-                            </div>
-                                </div>
 
-                            </div>
-
-                        </div>
-                        <!-- End Right Column -->
-                </div>
-
-                <!-- Sa footer nani na belong nga layout -->
-            </div>
-            <!-- #/ container -->
+        <!-- footer nani sa ubos mao ning close-->
         </main>
+
         <!--** Content body end **-->
 
         <!--** Footer start ***-->
@@ -329,9 +292,12 @@
     <script src="assets/dashboard/js/gleek.js"></script>
     <script src="assets/dashboard/js/styleSwitcher.js"></script>
 
-    <script src="assets/dashboard/plugins/tables/js/jquery.dataTables.min.js"></script>
-    <script src="assets/dashboard/plugins/tables/js/datatable/dataTables.bootstrap4.min.js"></script>
-    <script src="assets/dashboard/plugins/tables/js/datatable-init/datatable-basic.min.js"></script>
+    
+     <!--  flot-chart js -->
+     <script src="assets/dashboard/plugins/flot/js/jquery.flot.min.js"></script>
+     <script src="assets/dashboard/plugins/flot/js/jquery.flot.pie.js"></script>
+     <!-- <script src="assets/dashboard/plugins/flot/js/jquery.flot.init.js"></script>  original script - guide-->
+     <script src="assets/global/module/development/flot-init-dev.js"></script>   <!--** custom script***-->
 
     <!-- Toastr -->
     <script src="assets/dashboard/plugins/toastr/js/toastr.min.js"></script>

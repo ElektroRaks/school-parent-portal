@@ -10,9 +10,10 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/DEMO-logo.png">
     
-
+    <!-- Chartist -->
+    <link rel="stylesheet" href="assets/dashboard/plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="assets/dashboard/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
     <!-- Custom Stylesheet -->
-    <link href="assets/dashboard/plugins/tables/css/datatable/dataTables.bootstrap4.min.css" rel="stylesheet">
     <link href="assets/dashboard/css/style.css" rel="stylesheet">
     <link href="assets/dashboard/css/custom-style.css" rel="stylesheet">
 </head>
@@ -42,14 +43,7 @@
                             <img src="assets/img/DEMO-logo.png" alt="" height="60px">
                         </span>
                     </div>
-                    <div class="p-1 m-hide "  style="color:#fff;">
-                        <span style="font-size:12px;">School Name</span><br>
-                        <span style="font-size:10px;">HR Management System</span>
-                    </div>
-
                 </div>
-                    
-                    
             </div>
         </div> 
         <!--*** Nav header end ***-->
@@ -66,15 +60,9 @@
                 </div>
                 <div class="header-left">
                     <div class="input-group icons">
-                        <!-- <div class="input-group-prepend">
-                            <span class="input-group-text bg-transparent border-0 pr-2 pr-sm-3" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
-                        </div> -->
-                        <!-- <input type="search" class="form-control" placeholder="Search Dashboard" aria-label="Search Dashboard">
-                        <div class="drop-down   d-md-none">
-							<form action="#">
-								<input type="text" class="form-control" placeholder="Search">
-							</form>
-                        </div> -->
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent border-0 pr-2 pr-sm-3">School Name</span>
+                        </div>
                     </div>
                 </div>
                 <div class="header-right">
@@ -142,14 +130,14 @@
                             <div class="drop-down dropdown-language animated fadeIn  dropdown-menu">
                                 <div class="dropdown-content-body">
                                     <ul>
-                                        <!-- <li><a href="javascript:void()">Super Admin</a></li> -->
-                                        <li><a href="dashboard.html">Admin</a></li>
-                                        <li><a href="teacher-dash.html">Teacher</a></li>
-                                        <li><a href="parent-dash.html">Parent</a></li>
-                                        <!-- github link -->
-                                        <!-- <li><a href="/school-parent-portal/admin-dash">dashboard.html</a></li>
-                                        <li><a href="school-parent-portal/teacher-dash.html">Teacher</a></li> -->
-                                        <!-- <li><a href="school-parent-portal/parent-dash.html">Teacher</a></li> -->
+                                         <!-- <li><a href="javascript:void()">Super Admin</a></li> -->
+                                         <li><a href="dashboard.html">Admin</a></li>
+                                         <li><a href="teacher-dash.html">Teacher</a></li>
+                                         <li><a href="parent-dash.html">Parent</a></li>
+                                         <!-- github link -->
+                                         <!-- <li><a href="/school-parent-portal/admin-dash">dashboard.html</a></li>
+                                         <li><a href="school-parent-portal/teacher-dash.html">Teacher</a></li> -->
+                                         <!-- <li><a href="school-parent-portal/parent-dash.html">Teacher</a></li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -166,17 +154,17 @@
                                 <div class="dropdown-content-body">
                                     <ul>
                                         <li>
-                                            <a href="app-profile.html"><i class="icon-user"></i> <span>Profile</span></a>
+                                            <a href="#"><i class="icon-user"></i> <span>Profile</span></a>
                                         </li>
                                         <li>
-                                            <a href="email-inbox.html"><i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill badge-primary">3</div></a>
+                                            <a href="#"><i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill badge-primary">3</div></a>
                                         </li>
                                         
                                         <hr class="my-2">
                                         <li>
-                                            <a href="page-lock.html"><i class="icon-lock"></i> <span>Lock Screen</span></a>
+                                            <a href="#"><i class="icon-lock"></i> <span>Lock Screen</span></a>
                                         </li>
-                                        <li><a href="page-login.html"><i class="icon-key"></i> <span>Logout</span></a></li>
+                                        <li><a href="/school-parent-portal/index.html"><i class="icon-key"></i> <span>Logout</span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -204,9 +192,9 @@
                         <i class="icon-graduation menu-icon"></i> <span class="nav-text">My Student</span>
                     </a>
                     <ul aria-expanded="false">
-                        <li><a href="#">Grades</a></li>
-                        <li><a href="#">Attendance</a></li>
-                        <li><a href="#">Behavior</a></li>
+                        <li><a href="parent-dash-grades.html">Grades</a></li>
+                        <li><a href="parent-dash-attendance.html">Attendance</a></li>
+                        <!-- <li><a href="parent-dash-Behavior.html">Behavior</a></li> -->
                     </ul>
                 </li>
                 <li>
@@ -221,9 +209,8 @@
                         <span class="nav-text">Finance</span>
                     </a>
                     <ul aria-expanded="false">
-                        <li><a href="#">Payment History</a></li>
-                        <li><a href="#">School Bills</a></li>
-                        <li><a href="#">Others</a></li>
+                        <li><a href="parent-dash-payment-history.html">Payment History</a></li>
+                        <li><a href="parent-dash-school-bills">School Bills</a></li>
                     </ul>
                 </li>
                 <!-- <li class="nav-label">Administration</li> -->
@@ -239,7 +226,7 @@
             </ul>
         </div>
     </sidebar>
-        <!--** Sidebar end **-->
+    <!--** Sidebar end **-->
 
 
         <!--** Content body start **-->
