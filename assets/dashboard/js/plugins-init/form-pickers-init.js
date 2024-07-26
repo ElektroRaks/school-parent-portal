@@ -61,12 +61,6 @@
     jQuery('#datepicker-inline').datepicker({
         todayHighlight: true
     });
-    // Daterange picker
-    $('.input-daterange-datepicker').daterangepicker({
-        buttonClasses: ['btn', 'btn-sm'],
-        applyClass: 'btn-danger',
-        cancelClass: 'btn-inverse'
-    });
     $('.input-daterange-timepicker').daterangepicker({
         timePicker: true,
         format: 'MM/DD/YYYY h:mm A',

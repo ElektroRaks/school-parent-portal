@@ -59,3 +59,21 @@
   text-decoration: none;
   border-radius: 3px;
 }
+
+.iqon-text-limit {
+  display: block;
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+div#DataTables_Table_0_filter label, div#DataTables_Table_0_length label {
+  display: flex !important;
+  align-items: center;
+}
+
+.fc-day-grid-event .fc-time, .fc-day-grid-event .fc-content  {
+  color:#ffffff !important;
+}
