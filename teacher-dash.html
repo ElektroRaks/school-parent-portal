@@ -10,6 +10,8 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/DEMO-logo.png">
     
+    <!-- full Calender -->
+    <link href="assets/dashboard/plugins/fullcalendar/css/fullcalendar.min.css" rel="stylesheet">
     <!-- Chartist -->
     <link rel="stylesheet" href="assets/dashboard/plugins/chartist/css/chartist.min.css">
     <link rel="stylesheet" href="assets/dashboard/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
@@ -206,7 +208,7 @@
                         <span class="nav-text">Parent</span>
                     </a>
                     <ul aria-expanded="false">
-                        <li><a href="teacher-Parent-list.html">Parent List</a></li>
+                        <li><a href="teacher-parent-list.html">Parent List</a></li>
                         <li><a href="#">Lorem</a></li>
                         <li><a href="#">Lorem</a></li>
                     </ul>
@@ -348,12 +350,37 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">School Event Calendar</h4>
-                                                    <canvas id="sales-chart" width="500" height="250"></canvas>
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="card-title">
+                                                            <h4>School Event Calendar</h4>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="card-box m-b-50">
+                                                                    <div id="calendar"></div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- BEGIN MODAL -->
+                                                            <div class="modal fade none-border" id="event-modal">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h4 class="modal-title"><strong>Add New Event</strong></h4>
+                                                                        </div>
+                                                                        <div class="modal-body"></div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Close</button>
+                                                                            <button type="button" class="btn btn-success save-event waves-effect waves-light">Create event</button>
+                                                                            <button type="button" class="btn btn-danger delete-event waves-effect waves-light" data-dismiss="modal">Delete</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
                                                 </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -449,11 +476,9 @@
     </div> <!--** main-wrapper end  **-->
     
 
+    <!-- global script -->
     <script src="assets/dashboard/plugins/common/common.min.js"></script>
-    <script src="assets/dashboard/js/custom.min.js"></script>
-    <script src="assets/dashboard/js/settings.js"></script>
-    <script src="assets/dashboard/js/gleek.js"></script>
-    <!-- <script src="assets/dashboard/js/styleSwitcher.js"></script> -->
+    <script src="assets/global/js/global-init-dev.js"></script> 
 
     <!--  flot-chart js -->
     <script src="assets/dashboard/plugins/flot/js/jquery.flot.min.js"></script>
@@ -462,7 +487,11 @@
     <script src="assets/global/module/development/flot-init-dev.js"></script>   <!--** custom script***-->
 
     
-    <script src="assets/dashboard/js/custom-js.js"></script>
+
+    <script src="assets/dashboard/plugins/jqueryui/js/jquery-ui.min.js"></script>
+     <script src="assets/dashboard/plugins/moment/moment.min.js"></script>
+     <script src="assets/dashboard/plugins/fullcalendar/js/fullcalendar.min.js"></script>
+     <script src="assets/dashboard/js/plugins-init/fullcalendar-init.js"></script>
 
 
     
