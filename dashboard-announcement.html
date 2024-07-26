@@ -1,0 +1,496 @@
+<!-- Template by Rowell - 2024 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dashboard - Parent Portal</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/DEMO-logo.png">
+    
+    
+    <!-- Chartist -->
+    <link rel="stylesheet" href="assets/dashboard/plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="assets/dashboard/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <link href="assets/dashboard/plugins/toastr/css/toastr.min.css" rel="stylesheet">
+
+    <!-- Page plugins css -->
+    <link href="assets/dashboard/plugins/clockpicker/dist/jquery-clockpicker.min.css" rel="stylesheet">
+    <!-- Date picker plugins css -->
+    <link href="assets/dashboard/plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
+    
+    <!-- Daterange picker plugins css -->
+    <link href="assets/dashboard/plugins/timepicker/bootstrap-timepicker.min.css" rel="stylesheet">
+    <link href="assets/dashboard/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link href="assets/dashboard/css/style.css" rel="stylesheet">
+    <link href="assets/dashboard/css/custom-style.css" rel="stylesheet">
+</head>
+<body>
+    <!--******************* Preloader start  ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************  Preloader end ********************-->
+    <!--** main-wrapper start  **-->
+    <div id="main-wrapper"> 
+
+    <header>
+        <!--** Nav header start **-->
+        <div class="nav-header gradient-custom"> 
+            <div class="brand-logo p-2">
+                <div class="d-flex row flex-nowrap justify-content-center align-items-center">
+                    <div class="">
+                        <b class="logo-abbr pl-2"><img src="assets/img/DEMO-logo.png" height="50px" alt=""> </b>
+                        <span class="logo-compact"><img src="assets/img/DEMO-logo.png" height="50px" alt=""></span>
+                        <span class="brand-title ">
+                            <img src="assets/img/DEMO-logo.png" alt="" height="60px">
+                        </span>
+                    </div>
+                    <!-- <div class="p-1 m-hide "  style="color:#fff;">
+                        <span style="font-size:12px;">School Name</span><br>
+                        <span style="font-size:10px;">HR Management System</span>
+                    </div> -->
+
+                </div>
+                    
+                    
+            </div>
+        </div> 
+        <!--*** Nav header end ***-->
+
+
+        <!--** Header start ***-->
+        <div class="header">    
+            <div class="header-content clearfix">
+                
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-left">
+                    <div class="input-group icons">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent border-0 pr-2 pr-sm-3" >School Name</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <ul class="clearfix">
+                        <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
+                                <i class="mdi mdi-note-outline"></i>
+                                <span class="badge gradient-1 badge-pill badge-primary">3</span>
+                            </a>
+                            <div class="drop-down animated fadeIn dropdown-menu">
+                                <div class="dropdown-content-heading d-flex justify-content-between">
+                                    <span class="">3 New Notes</span>  
+                                    
+                                </div>
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <!--** Loop **-->
+                                        <li class="notification-unread">
+                                            <a href="javascript:void()">
+                                                <img class="float-left mr-3 avatar-img" src="./assets/dashboard/images/avatar/1.jpg" alt="">
+                                                <div class="notification-content">
+                                                    <div class="notification-heading">Teacher Perz</div>
+                                                    <div class="notification-timestamp">08 Hours ago</div>
+                                                    <div class="notification-text">Hi Ma'am, Just wanted to let you ...</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!--** Loop **-->
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
+                                <i class="mdi mdi-bell-outline"></i>
+                                
+                                <span class="badge badge-pill gradient-2 badge-primary">3</span>
+                            </a>
+                            <div class="drop-down animated fadeIn dropdown-menu dropdown-notfication">
+                                <div class="dropdown-content-heading d-flex justify-content-between">
+                                    <span class="">2 New Notifications</span>  
+                                    
+                                </div>
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <!--** Loop **-->
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <span class="mr-3 avatar-icon bg-success-lighten-2"><i class="icon-present"></i></span>
+                                                <div class="notification-content">
+                                                    <h6 class="notification-heading">Events near you</h6>
+                                                    <span class="notification-text">Within next 5 days</span> 
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!--** Loop **-->
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="icons dropdown d-none d-md-flex">
+                            <a href="javascript:void(0)" class="log-user"  data-toggle="dropdown">
+                                <span>Access Mode</span>  <i class="fa fa-angle-down f-s-14" aria-hidden="true"></i>
+                            </a>
+                            <div class="drop-down dropdown-language animated fadeIn  dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <!-- <li><a href="javascript:void()">Super Admin</a></li> -->
+                                        <li><a href="dashboard.html">Admin</a></li>
+                                        <li><a href="teacher-dash.html">Teacher</a></li>
+                                        <li><a href="parent-dash.html">Parent</a></li>
+                                        <!-- github link -->
+                                        <!-- <li><a href="/school-parent-portal/admin-dash">dashboard.html</a></li>
+                                        <li><a href="school-parent-portal/teacher-dash.html">Teacher</a></li> -->
+                                        <!-- <li><a href="school-parent-portal/parent-dash.html">Teacher</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
+                                <span class="activity active"></span>
+                                <div id="profileImage"></div>
+                                <span id="profileImageUserName" data-name="IQon System"></span>
+                                <!-- display user image using condition -->
+                                <!-- <img src="./assets/college_assets/images/user/1.png" height="40" width="40" alt=""> -->
+                            </div>
+                            <div class="drop-down dropdown-profile   dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="icon-user"></i> <span>Profile</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill badge-primary">3</div></a>
+                                        </li>
+                                        
+                                        <hr class="my-2">
+                                        <li>
+                                            <a href="#"><i class="icon-lock"></i> <span>Lock Screen</span></a>
+                                        </li>
+                                        <li><a href="/school-parent-portal/index.html"><i class="icon-key"></i> <span>Logout</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--** Header end ti-comment-alt **-->
+
+    </header>
+
+
+    <!--** Sidebar start **-->
+    <sidebar class="nk-sidebar">           
+        <div class="nk-nav-scroll">
+            <ul class="metismenu" id="menu">
+                <li class="nav-label">Admin Menu</li>
+                <li>
+                    <a href="dashboard.html" aria-expanded="false">
+                        <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <i class="icon-user menu-icon"></i> <span class="nav-text">Manage Users</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="dashboard-manage-teacher.html">Teacher</a></li>
+                        <li><a href="dashboard-manage-parent.html">Parent</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <i class="icon-graduation menu-icon"></i> <span class="nav-text">Manage Students</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="dashboard-student.html">Student List</a></li>
+                        <li><a href="dashboard-grade.html">Grades</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="dashboard-announcement.html" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-megaphone"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
+                        <span class="nav-text">Announcement</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-pie-chart"><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M16 22h2a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3.5"/><path d="M4.017 11.512a6 6 0 1 0 8.466 8.475"/><path d="M8 16v-6a6 6 0 0 1 6 6z"/></svg>
+                        <span class="nav-text">Reports</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="dashboard-student-performance.html">Student Performance</a></li>
+                        <li><a href="dashboard-student-attendance.html">Attendance</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hand-coins"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"/><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 16 6 6"/><circle cx="16" cy="9" r="2.9"/><circle cx="6" cy="5" r="3"/></svg>
+                        <span class="nav-text">Finance</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="dashboard-student-finance.html">Student</a></li>
+                        <!-- <li><a href="#">Other Payments</a></li> -->
+                    </ul>
+                </li>
+                <li class="nav-label">Administration</li>
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <i class="icon-settings menu-icon"></i> <span class="nav-text">Administration</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="#">System settings & configurations</a></li>
+                        <li><a href="#">User management & access control</a></li>
+                        <li><a href="#">Security & compliance</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+    </sidebar>
+        <!--** Sidebar end **-->
+
+
+        <!--** Content body start **-->
+        <main class="content-body">
+
+            <!-- Main content, all include nga view layout kada page dani e display -->
+            <div class="row page-titles mx-0">
+                    <h4>School Name</h4>
+                <div class="col p-md-0">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                        <!-- <li class="breadcrumb-item active"><a href="javascript:void(0)">Home</a></li> -->
+                    </ol>
+                </div>
+            </div>
+            <!-- row -->
+
+            <div class="container-fluid">
+
+                <div class="row mt-1">
+
+                    <div class="col-12 pb-3">
+                        <div class="bootstrap-modal">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                                <i ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square-plus"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M12 7v6"/><path d="M9 10h6"/></svg></i>
+                                Add New
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Add New Announcement</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="announcement_heading" class="col-form-label">Type:</label>
+                                                    <select class="form-control">
+                                                        <option>All</option>
+                                                        <option>Teachers</option>
+                                                        <option>Parents</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="announcement_heading" class="col-form-label">Heading:</label>
+                                                    <input type="text" class="form-control" id="announcement_heading">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="announcement_text" class="col-form-label">Message:</label>
+                                                    <textarea class="form-control" id="announcement_text"></textarea>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                        <label for="date-range" class="col-form-label">Select date Range:</label>
+                                                        <input class="form-control input-daterange-datepicker" type="text" name="daterange" value="01/01/2015 - 01/31/2015">
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" id="add_announcement" class="btn btn-primary">Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!-- Start Left Column -->
+                        <div class="col-lg-12 col-md-12">
+
+                            <div class="row ">
+                                <div class="col-lg-12 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="card-title text-dark text-start">AnnouncementList</h3>
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-bordered zero-configuration">
+                                                    <thead>
+                                                        <tr>                                                         
+                                                            <th>Type</th>   
+                                                            <th>Heading</th>
+                                                            <th>Message</th>
+                                                            <th>Date Start</th>
+                                                            <th>Date End</th>                                                            
+                                                            <th>Status</th>
+                                                            <th>action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Teacher</td>
+                                                            <td> <span class="iqon-text-limit" data-toggle="tooltip" data-placement="left" title="Starting school enrollment ">Starting school enrollment </span></td>
+                                                            <td><span class="iqon-text-limit"  data-toggle="tooltip" data-placement="left" title="Lorem ipsum dolor sit amet consectetur adipiscing elit gravida maecenas sem, conubia nisl sagittis felis hac nibh taciti euismod enim, placerat accumsan luctus fermentum phasellus dignissim id hendrerit faucibus.">Lorem ipsum dolor sit amet consectetur adipiscing elit gravida maecenas sem, conubia nisl sagittis felis hac nibh taciti euismod enim, placerat</span></td>
+                                                            <td>2024/07/20</td>
+                                                            <td>2024/07/25</td>
+                                                            <td><span class="badge badge-pill badge-success text-white">Active</span></td>
+                                                            <td class="d-flex gap-2">
+                                                                <span class="m-1">
+                                                                    <a href="#" class="custom-btn-action btn-primary" data-toggle="tooltip" data-placement="left" title="Edit">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pencil"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg></i>
+                                                                    </a>
+                                                                </span>
+                                                                <span class="m-1">
+                                                                    <a href="#" class="custom-btn-action btn-danger" data-toggle="tooltip" data-placement="left" title="Delete">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg></i>
+                                                                    </a>
+                                                                </span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Parent</td>
+                                                            <td> <span class="iqon-text-limit" data-toggle="tooltip" data-placement="left" title="Starting school enrollment ">Starting school enrollment </span></td>
+                                                            <td><span class="iqon-text-limit"  data-toggle="tooltip" data-placement="left" title="Lorem ipsum dolor sit amet consectetur adipiscing elit gravida maecenas sem, conubia nisl sagittis felis hac nibh taciti euismod enim, placerat accumsan luctus fermentum phasellus dignissim id hendrerit faucibus.">Lorem ipsum dolor sit amet consectetur adipiscing elit gravida maecenas sem, conubia nisl sagittis felis hac nibh taciti euismod enim, placerat</span></td>
+                                                            <td>2024/07/20</td>
+                                                            <td>2024/07/25</td>
+                                                            <td><span class="badge badge-pill badge-success text-white">Active</span></td>
+                                                            <td class="d-flex gap-2">
+                                                                <span class="m-1">
+                                                                    <a href="#" class="custom-btn-action btn-primary" data-toggle="tooltip" data-placement="left" title="Edit">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pencil"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg></i>
+                                                                    </a>
+                                                                </span>
+                                                                <span class="m-1">
+                                                                    <a href="#" class="custom-btn-action btn-danger" data-toggle="tooltip" data-placement="left" title="Delete">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg></i>
+                                                                    </a>
+                                                                </span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>All</td>
+                                                            <td> <span class="iqon-text-limit" data-toggle="tooltip" data-placement="left" title="Starting school enrollment ">Starting school enrollment </span></td>
+                                                            <td><span class="iqon-text-limit"  data-toggle="tooltip" data-placement="left" title="Lorem ipsum dolor sit amet consectetur adipiscing elit gravida maecenas sem, conubia nisl sagittis felis hac nibh taciti euismod enim, placerat accumsan luctus fermentum phasellus dignissim id hendrerit faucibus.">Lorem ipsum dolor sit amet consectetur adipiscing elit gravida maecenas sem, conubia nisl sagittis felis hac nibh taciti euismod enim, placerat</span></td>
+                                                            <td>2024/07/20</td>
+                                                            <td>2024/07/25</td>
+                                                            <td><span class="badge badge-pill badge-success text-white">Active</span></td>
+                                                            <td class="d-flex gap-2">
+                                                                <span class="m-1">
+                                                                    <a href="#" class="custom-btn-action btn-primary" data-toggle="tooltip" data-placement="left" title="Edit">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pencil"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg></i>
+                                                                    </a>
+                                                                </span>
+                                                                <span class="m-1">
+                                                                    <a href="#" class="custom-btn-action btn-danger" data-toggle="tooltip" data-placement="left" title="Delete">
+                                                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg></i>
+                                                                    </a>
+                                                                </span>
+                                                            </td>
+                                                        </tr>
+                                                       
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <th>Heading</th>
+                                                            <th>Message</th>
+                                                            <th>Date Start</th>
+                                                            <th>Date End</th>                                                            
+                                                            <th>Role</th>                                                            
+                                                            <th>Status</th>
+                                                            <th>action</th>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                            <!-- <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                               
+
+                            </div>
+
+                        </div>
+                        <!-- End Left Column -->
+
+                </div>
+
+            <!-- Main content, all include nga view layout kada page dani e display -->
+
+
+                <!-- Sa footer nani na belong nga layout -->
+            </div>
+            <!-- #/ container -->
+             
+        </main>
+        <!--** Content body end **-->
+
+        <!--** Footer start ***-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; Designed & Developed by <a href="interaq.net">Interaq.net</a>  <span id="copyright"> </span></p>
+            </div>
+        </div>
+        <!--** Footer end  ***-->
+    </div> <!--** main-wrapper end  **-->
+    
+
+    <!-- global script -->
+    <script src="assets/dashboard/plugins/common/common.min.js"></script>
+    <script src="assets/global/js/global-init-dev.js"></script> 
+
+    <!-- Date picker Plugin JavaScript -->
+    <script src="assets/dashboard/plugins/moment/moment.js"></script>
+    <script src="assets/dashboard/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Datatabble -->
+    <script src="assets/dashboard/plugins/tables/js/jquery.dataTables.min.js"></script>
+    <script src="assets/dashboard/plugins/tables/js/datatable/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/dashboard/plugins/tables/js/datatable-init/datatable-basic.min.js"></script>
+
+
+
+    <!-- Toastr -->
+    <script src="assets/dashboard/plugins/toastr/js/toastr.min.js"></script>
+    <script src="assets/dashboard/plugins/toastr/js/toastr.init.js"></script>
+
+    <!-- <script src="assets/global/global/module/production/announcement-init.js"></script>  -->
+    <script src="assets/global/module/development/announcement-init-dev.js"></script>  
+
+    
+
+    
+</body>
+</html>
